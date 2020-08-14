@@ -8,9 +8,13 @@
         <id>http://yoursite.com/2020/08/13/%E8%90%8C%E6%96%B0%E6%9D%A5%E4%BA%86/</id>
         <title>萌新报道</title>
         <link rel="alternate" href="http://yoursite.com/2020/08/13/%E8%90%8C%E6%96%B0%E6%9D%A5%E4%BA%86/"/>
-        <content type="html">&lt;p&gt;#&lt;center&gt;萌新来报道力 &lt;/center&gt;&lt;/p&gt;
+        <content type="html">&lt;center&gt;# 萌新来报道力 &lt;/center&gt;
+
 &lt;p&gt;入坑计算机领域已经一年有余，终于创建了第一个自己的博客了。在这个博客中，我将分享自己学习的心路历程，知识经验等等，不断总结，不断进步。&lt;br&gt;登高山务攻绝顶，赏大雪莫畏严寒！！！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2062307482,1942308797&amp;fm=26&amp;gp=0.jpg&#34;&gt;&lt;/p&gt;
+&lt;center&gt;![](https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2062307482,1942308797&amp;fm=26&amp;gp=0.jpg)&lt;/center&gt;
+
+
+
 </content>
         <updated>2020-08-13T02:45:43.000Z</updated>
     </entry>
