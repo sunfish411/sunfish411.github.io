@@ -5,12 +5,34 @@
         <link>http://yoursite.com</link>
         <description></description>
         <language>en| zh-CN | zh-TW</language>
-        <pubDate>Sat, 22 Aug 2020 16:54:43 +0800</pubDate>
-        <lastBuildDate>Sat, 22 Aug 2020 16:54:43 +0800</lastBuildDate>
+        <pubDate>Thu, 27 Aug 2020 18:45:43 +0800</pubDate>
+        <lastBuildDate>Thu, 27 Aug 2020 18:45:43 +0800</lastBuildDate>
         <category>blog</category>
         <category>心路历程</category>
         <category>TWO</category>
         <category>ONE</category>
+        <item>
+            <guid isPermalink="true">http://yoursite.com/2020/08/27/%E5%88%9D%E8%AF%86%E9%98%9F%E5%88%97/</guid>
+            <title>初识队列和栈</title>
+            <link>http://yoursite.com/2020/08/27/%E5%88%9D%E8%AF%86%E9%98%9F%E5%88%97/</link>
+            <category>blog</category>
+            <category>心路历程</category>
+            <category>ONE</category>
+            <pubDate>Thu, 27 Aug 2020 18:45:43 +0800</pubDate>
+            <description><![CDATA[ &lt;center&gt;&lt;font face=&#34;黑体&#34; size=10&gt; 初识队列和栈 &lt;/font&gt;&lt;/center&gt;
+
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;p&gt;&amp;emsp;&lt;font size=3&gt;队列，作为一种比较简单的数据结构，其在算法中有着非常多的应用。先进先出，后进后出，接下来我将从一个简单的例子出发渗透队列的思想。&lt;/p&gt;
+&lt;h2 id=&#34;题目大意&#34;&gt;&lt;a href=&#34;#题目大意&#34; class=&#34;headerlink&#34; title=&#34;题目大意&#34;&gt;&lt;/a&gt;题目大意&lt;/h2&gt;&lt;p&gt;&amp;emsp;n 个人围成一圈，从第一个人开始报数,数到 mm 的人出列，再由下一个人重新从1开始报数，数到m的人再出圈，依次类推，直到所有的人都出圈，输出依次出圈人的编号。&lt;/p&gt;
+&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;&amp;emsp;构建一个含有n个元素的队列，进行n次循环，在每次循环中将队列前m-1个元素依次放置队尾，然后将第m个元素出队并输出，这样每次循环之后形成新的队列重复以上操作即可。&lt;/p&gt;
+&lt;h2 id=&#34;代码&#34;&gt;&lt;a href=&#34;#代码&#34; class=&#34;headerlink&#34; title=&#34;代码&#34;&gt;&lt;/a&gt;代码&lt;/h2&gt;&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt;&lt;span class=&#34;meta-string&#34;&gt;&amp;lt;bits/stdc++.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;namespace&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;std&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; a[&lt;span class=&#34;number&#34;&gt;1000005&lt;/span&gt;],n,m;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;scanf&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;%d%d&amp;quot;&lt;/span&gt;,&amp;amp;n,&amp;amp;m);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; head=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;,tail=&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;i&amp;lt;=n;i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        a[++tail]=i;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt;(tail&amp;gt;=head)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;i&amp;lt;m;i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            a[++tail]=a[head];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            head++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;%d &amp;quot;&lt;/span&gt;,a[head++]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/font&gt;
+
+&lt;br/&gt;
+
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://yoursite.com/2020/08/22/%E8%BD%A6%E9%80%94%E9%A3%98%E6%89%AC%E7%9A%84%E6%80%9D%E7%BB%AA/</guid>
             <title>车途飘扬的思绪</title>
