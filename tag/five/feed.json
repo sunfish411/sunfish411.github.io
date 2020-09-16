@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Sunyuzero-Blog • All posts by \"five\" tag",
+    "description": "",
+    "home_page_url": "http://yoursite.com",
+    "items": [
+        {
+            "id": "http://yoursite.com/2020/09/05/bfs%E5%AD%A6%E4%B9%A0/",
+            "url": "http://yoursite.com/2020/09/05/bfs%E5%AD%A6%E4%B9%A0/",
+            "title": "BFS学习",
+            "date_published": "2020-09-05T05:45:43.000Z",
+            "content_html": "<center><font face=\"黑体\" size=8> BFS入门 </font></center>\n\n<a id=\"more\"></a>\n<h2 id=\"BFS\"><a href=\"#BFS\" class=\"headerlink\" title=\"BFS\"></a>BFS</h2><p>BFS,即广度优先搜索算法，也称为宽度优先搜索，从起点开始，枚举每一次搜索的可到达处，直到搜索到终点。</p>\n<h3 id=\"示例\"><a href=\"#示例\" class=\"headerlink\" title=\"示例\"></a>示例</h3><p>迷宫搜索，即从起点出发，寻找到终点的最近路线</p>\n<h3 id=\"代码\"><a href=\"#代码\" class=\"headerlink\" title=\"代码\"></a>代码</h3><figure class=\"highlight cpp\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br></pre></td><td class=\"code\"><pre><span class=\"line\"><span class=\"meta\">#<span class=\"meta-keyword\">include</span> <span class=\"meta-string\">&lt;cstdio&gt;</span></span></span><br><span class=\"line\">/</span><br></pre></td></tr></table></figure>",
+            "tags": [
+                "blog",
+                "学习经验",
+                "FIVE"
+            ]
+        }
+    ]
+}
