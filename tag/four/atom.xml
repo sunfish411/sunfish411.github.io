@@ -13,6 +13,7 @@
     <category term="FOUR" />
     <category term="FIVE" />
     <category term="SIX" />
+    <category term="Seven" />
     <entry>
         <id>http://yoursite.com/2020/09/03/%E5%88%9D%E6%8E%A2dfs/</id>
         <title>初探DFS</title>
