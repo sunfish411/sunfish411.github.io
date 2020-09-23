@@ -16,6 +16,8 @@
         <category>FOUR</category>
         <category>SIX</category>
         <category>Seven</category>
+        <category>NIGHT</category>
+        <category>EIGHT</category>
         <item>
             <guid isPermalink="true">http://yoursite.com/2020/09/03/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</guid>
             <title>初探DFS</title>

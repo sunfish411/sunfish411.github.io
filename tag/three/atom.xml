@@ -13,6 +13,8 @@
     <category term="FOUR" />
     <category term="SIX" />
     <category term="Seven" />
+    <category term="NIGHT" />
+    <category term="EIGHT" />
     <entry>
         <id>http://yoursite.com/2020/09/01/%E6%9A%B4%E5%8A%9B%E6%9E%9A%E4%B8%BE/</id>
         <title>暴力枚举</title>

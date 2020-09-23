@@ -16,15 +16,17 @@
         <category>FOUR</category>
         <category>SIX</category>
         <category>Seven</category>
+        <category>NIGHT</category>
+        <category>EIGHT</category>
         <item>
-            <guid isPermalink="true">http://yoursite.com/2020/08/30/%E9%93%BE%E8%A1%A8%E5%AD%A6%E4%B9%A0/</guid>
-            <title>链表学习</title>
-            <link>http://yoursite.com/2020/08/30/%E9%93%BE%E8%A1%A8%E5%AD%A6%E4%B9%A0/</link>
+            <guid isPermalink="true">http://yoursite.com/2020/08/30/%E9%93%BE%E8%A1%A8%E5%AD%A6%E4%B9%A0(%E4%B8%80)/</guid>
+            <title>链表学习(一)</title>
+            <link>http://yoursite.com/2020/08/30/%E9%93%BE%E8%A1%A8%E5%AD%A6%E4%B9%A0(%E4%B8%80)/</link>
             <category>blog</category>
             <category>TWO</category>
             <category>学习经验</category>
             <pubDate>Sun, 30 Aug 2020 13:45:43 +0800</pubDate>
-            <description><![CDATA[ &lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; 链表学习 &lt;/font&gt;&lt;/center&gt;
+            <description><![CDATA[ &lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; 链表学习(一) &lt;/font&gt;&lt;/center&gt;
 
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 
@@ -44,27 +46,6 @@
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; data[&lt;span class=&#34;number&#34;&gt;100&lt;/span&gt;],right[&lt;span class=&#34;number&#34;&gt;100&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;i&amp;lt;=n;i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;scanf&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;%d&amp;quot;&lt;/span&gt;,&amp;amp;data[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;i&amp;lt;=n;i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(i!=n) right[i]=i+&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; right[i]=&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125; &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;2.插入数据操作&lt;/p&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; x;&lt;span class=&#34;built_in&#34;&gt;scanf&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;%d&amp;quot;&lt;/span&gt;,&amp;amp;x);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; t=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt;(t!=&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(data[right[t]&amp;gt;data[n])&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        data[n+&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;]=x;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        right[t]=n+&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        right[n+&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;]=t+&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;break&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    t=right[t];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://yoursite.com/2020/08/22/%E8%BD%A6%E9%80%94%E9%A3%98%E6%89%AC%E7%9A%84%E6%80%9D%E7%BB%AA/</guid>
-            <title>车途飘扬的思绪</title>
-            <link>http://yoursite.com/2020/08/22/%E8%BD%A6%E9%80%94%E9%A3%98%E6%89%AC%E7%9A%84%E6%80%9D%E7%BB%AA/</link>
-            <category>blog</category>
-            <category>心路历程</category>
-            <category>TWO</category>
-            <pubDate>Sat, 22 Aug 2020 16:54:43 +0800</pubDate>
-            <description><![CDATA[ &lt;center&gt;&lt;font face=&#34;黑体&#34; size=6&gt; 一路旅途，万千思绪&lt;/font&gt;&lt;/center&gt;
-
-&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
-
-&lt;p&gt;&amp;emsp;&lt;font size=3&gt;在这漫长高铁的旅途中，思绪繁杂。闭上眼睛，聆听着隧道中的轰鸣声，车厢内的低语声，所有的声音都那么的清晰，清晰到一言一语都似在耳边，又那么模糊，模糊到一字一句我都我都无法明白。&lt;/p&gt;
-&lt;p&gt;&amp;emsp;于是乎，我睁开眼，看向了窗外，思绪跟随外面的山山水水飞跃，想到了昨天的相聚，了结了一年未见的遗憾，她依旧似从前，又想到了未来的人生，哈我似乎一想到她就想到了未来。我以为时间能磨平一切，没想到一看见她依旧无法抑制心中的悸动。自信在她面前似乎瞬间崩溃，取而代之的罕见的自卑，我小心翼翼地努力表现好自己，偷偷地瞟向她的脸庞，在她的目光转向我时，闪避似乎已成本能。&lt;/p&gt;
-&lt;p&gt;&amp;emsp;离别之后，她的回眸一笑，我心绪澎湃，我不断回头，看着她的身影，我越走越快。自嘲？可能有吧，但更多的是一种欲望，一种想变优秀的欲望。&lt;/p&gt;
-&lt;p&gt;&amp;emsp;我很庆幸很碰到很多志同道合的朋友，也很庆幸结实一个大佬，不断带着我学习，带着我前进，回到学校，一起奋斗。&lt;/p&gt;
-&lt;p&gt;&amp;emsp;列车将要到站，武大，我来了，未来，我也来了！！！&lt;br&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;br/&gt;
-
-&lt;div align=center&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/sunyuzero/cdn/img/cover4.jpg&#34; width=600&gt;&lt;/div&gt; ]]></description>
         </item>
     </channel>
 </rss>

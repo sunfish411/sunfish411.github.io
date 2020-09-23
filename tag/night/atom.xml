@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://yoursite.com</id>
+    <title>Sunyuzero-Blog • Posts by &#34;night&#34; tag</title>
+    <link href="http://yoursite.com" />
+    <updated>2020-09-23T05:45:43.000Z</updated>
+    <category term="blog" />
+    <category term="心路历程" />
+    <category term="TWO" />
+    <category term="ONE" />
+    <category term="学习经验" />
+    <category term="THREE" />
+    <category term="FOUR" />
+    <category term="SIX" />
+    <category term="Seven" />
+    <category term="NIGHT" />
+    <category term="EIGHT" />
+    <entry>
+        <id>http://yoursite.com/2020/09/23/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/</id>
+        <title>算法学习</title>
+        <link rel="alternate" href="http://yoursite.com/2020/09/23/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/"/>
+        <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; 算法学习 &lt;/font&gt;&lt;/center&gt;
+## getchar和putchar
+getchar用于输入单个字符，putchar用于输出单个字符
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;char&lt;/span&gt; c;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;c=getchar();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;putchar&lt;/span&gt;(c);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+## 常见的math函数
+使用math内置函数需要添加头文件&lt;cmath&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;fabs&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; x);  &lt;span class=&#34;comment&#34;&gt;//取x的绝对值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;floor&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; x);  &lt;span class=&#34;comment&#34;&gt;//向上取整&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;ceil&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; x);  &lt;span class=&#34;comment&#34;&gt;//向下取整&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;pow&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; r,&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; p) &lt;span class=&#34;comment&#34;&gt;//返回r的p次方&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;sqrt&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; x);  &lt;span class=&#34;comment&#34;&gt;//返回x的算术平方根&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; x);  &lt;span class=&#34;comment&#34;&gt;//返回ln(x)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;sin&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; x);  &lt;span class=&#34;comment&#34;&gt;//返回正弦值，要求x为弧度制&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;acos&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; x);  &lt;span class=&#34;comment&#34;&gt;//返回反余弦值，pi=acos(-1);&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;round(&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; x);  &lt;span class=&#34;comment&#34;&gt;//对x进行四舍五入取整&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+## memset函数
+memset用于对数组中的每一个元素赋予相同的值（0或-1）,下面的这个函数即是对数组a的元素全部赋予0的操作
+memset(a,0,sizeof(a));
+## 对字符数组的输入输出
+### scanf和printf
+scanf(&#34;%c&#34;,&amp;c)用于输入单个字符,scanf(&#34;%s&#34;,s)用于输入字符数组，%s识别空格作为字符串的结尾
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;char&lt;/span&gt; str[&lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;scanf&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;%s&amp;quot;&lt;/span&gt;,str);   &lt;span class=&#34;comment&#34;&gt;//输入TAT TAT&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;%s&amp;quot;&lt;/span&gt;,str);  &lt;span class=&#34;comment&#34;&gt;//输出TAT&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+### gets和puts
+gets用于输入一行字符串，以&#39;\n&#39;作为识别结尾,puts用于输出一行字符串并自动换行
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;char&lt;/span&gt; str[&lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gets(str);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;puts&lt;/span&gt;(str);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+## cstring的使用
+使用string类的内置函数需要包含头文件&lt;cstring&gt;
+### strlen()
+strlen()函数用于获取字符串的长度
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;char&lt;/span&gt; str[&lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gets(str)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; len=&lt;span class=&#34;built_in&#34;&gt;strlen&lt;/span&gt;(str);  &lt;span class=&#34;comment&#34;&gt;//获取字符串的长度&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+### strcmp()
+strcmp(str1,str2)函数用于比较2个字符串的大小（按照字典序），返回一个整数，若str1&gt;str2，则返回一个正整数，若str1&lt;str2，则返回一个负整数,若str1=str2,则返回0。示例如下：
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;char&lt;/span&gt; str1[&lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;],str2[&lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gets(str1);    &lt;span class=&#34;comment&#34;&gt;//Dear&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gets(str2);       &lt;span class=&#34;comment&#34;&gt;//Cat&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;strcmp&lt;/span&gt;(str1,str2)  &lt;span class=&#34;comment&#34;&gt;//返回一个正整数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+### strcpy()
+strcpy(str1,str2)函数可以把str2复制给str1
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;char&lt;/span&gt; str1[&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;],str2[&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gets(str1);   &lt;span class=&#34;comment&#34;&gt;//Hello&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gets(str2);   &lt;span class=&#34;comment&#34;&gt;//World&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;strcpy&lt;/span&gt;(str1,str2);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;puts&lt;/span&gt;(str1);   &lt;span class=&#34;comment&#34;&gt;//World&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+        <category term="blog" />
+        <category term="学习经验" />
+        <category term="NIGHT" />
+        <updated>2020-09-23T05:45:43.000Z</updated>
+    </entry>
+</feed>
