@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Sunyuzero-Blog • All posts by \"java\" tag",
+    "description": "",
+    "home_page_url": "http://yoursite.com",
+    "items": [
+        {
+            "id": "http://yoursite.com/2020/10/01/java%E7%AC%94%E8%AE%B0/",
+            "url": "http://yoursite.com/2020/10/01/java%E7%AC%94%E8%AE%B0/",
+            "title": "java学习笔记（一）",
+            "date_published": "2020-10-01T05:45:43.000Z",
+            "content_html": "<center><font face=\"黑体\" size=8> 算法学习 </font></center>",
+            "tags": [
+                "blog",
+                "java学习",
+                "java"
+            ]
+        }
+    ]
+}

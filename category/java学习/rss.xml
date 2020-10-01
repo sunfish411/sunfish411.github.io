@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Sunyuzero-Blog • Posts by &#34;java学习&#34; category</title>
+        <link>http://yoursite.com</link>
+        <description></description>
+        <language>en| zh-CN | zh-TW</language>
+        <pubDate>Thu, 01 Oct 2020 13:45:43 +0800</pubDate>
+        <lastBuildDate>Thu, 01 Oct 2020 13:45:43 +0800</lastBuildDate>
+        <category>blog</category>
+        <category>心路历程</category>
+        <category>学习经验</category>
+        <category>ONE</category>
+        <category>数据结构</category>
+        <category>比赛</category>
+        <category>BFS</category>
+        <category>java学习</category>
+        <category>java</category>
+        <category>算法</category>
+        <category>暴力枚举</category>
+        <category>DFS</category>
+        <item>
+            <guid isPermalink="true">http://yoursite.com/2020/10/01/java%E7%AC%94%E8%AE%B0/</guid>
+            <title>java学习笔记（一）</title>
+            <link>http://yoursite.com/2020/10/01/java%E7%AC%94%E8%AE%B0/</link>
+            <category>blog</category>
+            <category>java学习</category>
+            <category>java</category>
+            <pubDate>Thu, 01 Oct 2020 13:45:43 +0800</pubDate>
+            <description><![CDATA[ &lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; 算法学习 &lt;/font&gt;&lt;/center&gt; ]]></description>
+        </item>
+    </channel>
+</rss>
