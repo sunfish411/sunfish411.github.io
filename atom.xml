@@ -22,41 +22,42 @@
         <link rel="alternate" href="http://yoursite.com/2020/10/01/java%E7%AC%94%E8%AE%B0/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; java基本概念 &lt;/font&gt;&lt;/center&gt;
 
-&lt;h1 id=&#34;JVM-JRE与JDK&#34;&gt;&lt;a href=&#34;#JVM-JRE与JDK&#34; class=&#34;headerlink&#34; title=&#34;JVM,JRE与JDK&#34;&gt;&lt;/a&gt;JVM,JRE与JDK&lt;/h1&gt;&lt;p&gt;java语言有一个非常显著的特征就是跨平台性，无论在什么操作系统上，java程序都能够运行，这就得益于java的JVM。&lt;/p&gt;
-&lt;h1 id=&#34;JVM&#34;&gt;&lt;a href=&#34;#JVM&#34; class=&#34;headerlink&#34; title=&#34;JVM&#34;&gt;&lt;/a&gt;JVM&lt;/h1&gt;&lt;p&gt;&amp;emsp;java虚拟机，简称JVM(java virtual machine），是运行java程序的假想计算机，是java程序的运行环境，我们编写的java代码，都运行在JVM上。&lt;br&gt;&amp;emsp;JVM为什么能使java具有跨平台性呢？原因就在于每个操作系统都具有一个不同的JVM，这些JVM充当了java程序与操作系统之间的中介，java程序直接运行在JVM中，形成的字节码在转运到操作系统，使得java程序在不同平台不需要重新编译，具有跨平台性。&lt;/p&gt;
-&lt;div align=center&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/sunyuzero/cdn/java/java1.png&#34; width=600&gt;&lt;/div&gt;
-# JRE与JDK
-JRE(Java Runtime Environment），是java程序运行时所需的环境，包括JVM和运行时所需要的核心类库，如果只需要运行java程序的话，那么只需要JRE即可。
-JDK(Java Development Kit），是java程序开发的工具包，包括JRE和开发人员使用的工具，如果需要开发java程序，那么就需要安装JDK了。
-这三者的关系是JDK&gt;JRE&gt;JVM，如下图所示
-&lt;div align=center&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/sunyuzero/cdn/java/java2.png&#34; width=600&gt;&lt;/div&gt;
-
-&lt;h1 id=&#34;用cmd运行java程序&#34;&gt;&lt;a href=&#34;#用cmd运行java程序&#34; class=&#34;headerlink&#34; title=&#34;用cmd运行java程序&#34;&gt;&lt;/a&gt;用cmd运行java程序&lt;/h1&gt;&lt;p&gt;首先将cmd定位在java程序所在的文件夹中，然后依次使用javac命令和java命令，javac是对java程序进行编译成class字节码，java命令则是运行编译好的class文件，具体操作如下图所示，其中Test.java是我已经编写好的程序&lt;/p&gt;
+&lt;h2 id=&#34;JVM-JRE与JDK&#34;&gt;&lt;a href=&#34;#JVM-JRE与JDK&#34; class=&#34;headerlink&#34; title=&#34;JVM,JRE与JDK&#34;&gt;&lt;/a&gt;JVM,JRE与JDK&lt;/h2&gt;&lt;p&gt;java语言有一个非常显著的特征就是跨平台性，无论在什么操作系统上，java程序都能够运行，这就得益于java的JVM。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JVM&lt;br&gt;&amp;emsp;java虚拟机，简称JVM(java virtual machine），是运行java程序的假想计算机，是java程序的运行环境，我们编写的java代码，都运行在JVM上。&lt;br&gt;&amp;emsp;JVM为什么能使java具有跨平台性呢？原因就在于每个操作系统都具有一个不同的JVM，这些JVM充当了java程序与操作系统之间的中介，java程序直接运行在JVM中，形成的字节码在转运到操作系统，使得java程序在不同平台不需要重新编译，具有跨平台性。&lt;div align=center&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/sunyuzero/cdn/java/java1.png&#34; width=600&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;JRE与JDK&lt;br&gt;JRE(Java Runtime Environment），是java程序运行时所需的环境，包括JVM和运行时所需要的核心类库，如果只需要运行java程序的话，那么只需要JRE即可。&lt;br&gt;JDK(Java Development Kit），是java程序开发的工具包，包括JRE和开发人员使用的工具，如果需要开发java程序，那么就需要安装JDK了。&lt;br&gt;这三者的关系是JDK&amp;gt;JRE&amp;gt;JVM，如下图所示&lt;div align=center&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/sunyuzero/cdn/java/java2.png&#34; width=600&gt;&lt;/div&gt;
+## 用cmd运行java程序
+首先将cmd定位在java程序所在的文件夹中，然后依次使用javac命令和java命令，javac是对java程序进行编译成class字节码，java命令则是运行编译好的class文件，具体操作如下图所示，其中Test.java是我已经编写好的程序
 &lt;div align=center&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/sunyuzero/cdn/java/java3.png&#34; width=600&gt;&lt;/div&gt;
+## java程序的注释
+java程序的注释与c++类似，有2种注释方法：单行注释和多行注释
+单行注释：//注释内容，//之后的内容将被计算机忽略
+多行注释：/* 注释内容，/* */之间的内容将被计算机忽略，可以跨行 */ 
 
-&lt;h1 id=&#34;java程序的注释&#34;&gt;&lt;a href=&#34;#java程序的注释&#34; class=&#34;headerlink&#34; title=&#34;java程序的注释&#34;&gt;&lt;/a&gt;java程序的注释&lt;/h1&gt;&lt;p&gt;java程序的注释与c++类似，有2种注释方法：单行注释和多行注释&lt;br&gt;单行注释：//注释内容，//之后的内容将被计算机忽略&lt;br&gt;多行注释：/* 注释内容，/* */之间的内容将被计算机忽略，可以跨行 */ &lt;/p&gt;
-&lt;h1 id=&#34;java关键字和标识符的命名规范&#34;&gt;&lt;a href=&#34;#java关键字和标识符的命名规范&#34; class=&#34;headerlink&#34; title=&#34;java关键字和标识符的命名规范&#34;&gt;&lt;/a&gt;java关键字和标识符的命名规范&lt;/h1&gt;&lt;p&gt;&amp;emsp;和c++语言类似，java也有预先定义的关键字，这些关键字都是全小写，都有特定含义，变量名和类名等都不能与关键字相同。java区分大小写，所以，命名时可以使用标识符的大写，但不建议。&lt;br&gt;&amp;emsp;标识符就是我们自己定义的内容的名称，标识符可以包含英文字母，数字，美元符号$和下划线_,但标识符不能以数字开头&lt;br&gt;建议标识符的命名规范：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;java关键字和标识符的命名规范&#34;&gt;&lt;a href=&#34;#java关键字和标识符的命名规范&#34; class=&#34;headerlink&#34; title=&#34;java关键字和标识符的命名规范&#34;&gt;&lt;/a&gt;java关键字和标识符的命名规范&lt;/h2&gt;&lt;p&gt;&amp;emsp;和c++语言类似，java也有预先定义的关键字，这些关键字都是全小写，都有特定含义，变量名和类名等都不能与关键字相同。java区分大小写，所以，命名时可以使用标识符的大写，但不建议。&lt;br&gt;&amp;emsp;标识符就是我们自己定义的内容的名称，标识符可以包含英文字母，数字，美元符号$和下划线_,但标识符不能以数字开头&lt;br&gt;建议标识符的命名规范：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;类名规范：首字母大写，后面每个单词的首字母大写（大驼峰式）&lt;/li&gt;
 &lt;li&gt;变量名规范：首字母小写，后面每个单词首字母大写（小驼峰式）&lt;/li&gt;
 &lt;li&gt;方法名规范：同变量名&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;常量与变量&#34;&gt;&lt;a href=&#34;#常量与变量&#34; class=&#34;headerlink&#34; title=&#34;常量与变量&#34;&gt;&lt;/a&gt;常量与变量&lt;/h1&gt;&lt;p&gt;&lt;font face=&#34;黑体&#34; size=4&gt;常量分为字符串常量，整数常量，浮点数常量，字符常量，布尔常量，空常量，用const修饰&lt;/font&gt;&lt;br&gt;字符串常量：String，以’\0’结束，如”abc”,”123”,占n+1个字节，其中n为组成字符串的字符个数。&lt;br&gt;整数常量：short（2字节），int（4字节），long（8字节）&lt;br&gt;浮点数常量：float（4字节），double（8字节）&lt;br&gt;字符常量：char（1字节）&lt;br&gt;布尔常量：bool（1字节）&lt;br&gt;空常量：null（0字节）&lt;br&gt;&lt;font face=&#34;黑体&#34; size=4&gt;变量，即可以改变的常量，没有const修饰的常量，其类型与常量相同&lt;/font&gt;&lt;br&gt;变量的使用注意事项：&lt;/p&gt;
+&lt;h2 id=&#34;常量与变量&#34;&gt;&lt;a href=&#34;#常量与变量&#34; class=&#34;headerlink&#34; title=&#34;常量与变量&#34;&gt;&lt;/a&gt;常量与变量&lt;/h2&gt;&lt;p&gt;&lt;font face=&#34;黑体&#34; size=4&gt;常量分为字符串常量，整数常量，浮点数常量，字符常量，布尔常量，空常量，用const修饰&lt;/font&gt;&lt;br&gt;字符串常量：String，以’\0’结束，如”abc”,”123”,占n+1个字节，其中n为组成字符串的字符个数。&lt;br&gt;整数常量：short（2字节），int（4字节），long（8字节）&lt;br&gt;浮点数常量：float（4字节），double（8字节）&lt;br&gt;字符常量：char（1字节）&lt;br&gt;布尔常量：bool（1字节）&lt;br&gt;空常量：null（0字节）&lt;br&gt;&lt;font face=&#34;黑体&#34; size=4&gt;变量，即可以改变的常量，没有const修饰的常量，其类型与常量相同&lt;/font&gt;&lt;br&gt;变量的使用注意事项：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;如果创建多个变量，变量名不可以重复&lt;/li&gt;
 &lt;li&gt;对于float和long类型，字母后缀的F和L不要去掉&lt;/li&gt;
 &lt;li&gt;如果使用byte和short类型的变量，右侧的数据值不要超过左侧类型的范围&lt;/li&gt;
 &lt;li&gt;一定要对变量赋值后才能使用&lt;/li&gt;
-&lt;li&gt;变量使用不能超过作用域&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;数据类型转换&#34;&gt;&lt;a href=&#34;#数据类型转换&#34; class=&#34;headerlink&#34; title=&#34;数据类型转换&#34;&gt;&lt;/a&gt;数据类型转换&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;变量使用不能超过作用域&lt;h2 id=&#34;数据类型转换&#34;&gt;&lt;a href=&#34;#数据类型转换&#34; class=&#34;headerlink&#34; title=&#34;数据类型转换&#34;&gt;&lt;/a&gt;数据类型转换&lt;/h2&gt;&lt;/li&gt;
 &lt;li&gt;自动类型转换，数据类型从小到大，将会自动发生类型转换。&lt;/li&gt;
 &lt;li&gt;强制类型转换，当数据类型从大到小，则需要强制转换，不能自动完成,可能会发生精度损失&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//自动转换&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; a=&lt;span class=&#34;number&#34;&gt;100&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;long&lt;/span&gt; b=a;  &lt;span class=&#34;comment&#34;&gt;//从int到long，自动转换&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;float&lt;/span&gt; c=&lt;span class=&#34;number&#34;&gt;0.1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; d=c;  &lt;span class=&#34;comment&#34;&gt;//从float到double，自动转换&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//强制转换&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; num = &lt;span class=&#34;number&#34;&gt;100L&lt;/span&gt;; &lt;span class=&#34;comment&#34;&gt;//会报错，int无法自动转换为long&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; num = (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;)&lt;span class=&#34;number&#34;&gt;100L&lt;/span&gt;;  &lt;span class=&#34;comment&#34;&gt;//正确，实现了强制转换&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;char&lt;/span&gt; s=&lt;span class=&#34;string&#34;&gt;&amp;#x27;a&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;a=(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;)s;   &lt;span class=&#34;comment&#34;&gt;//正确，将字符串强制转化成int整数,将会输出a的ASCII码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h1 id=&#34;ASCII码表&#34;&gt;&lt;a href=&#34;#ASCII码表&#34; class=&#34;headerlink&#34; title=&#34;ASCII码表&#34;&gt;&lt;/a&gt;ASCII码表&lt;/h1&gt;ASCII ((American Standard Code for Information Interchange): 美国信息交换标准代码）是基于拉丁字母的一套电脑编码系统标准，ASCII 码也叫基础ASCII码，使用7 位二进制数（剩下的1位二进制为0）来表示所有的大写和小写字母，数字0 到9、标点符号，以及在美式英语中使用的特殊控制字符&lt;div align=center&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/sunyuzero/cdn/java/java4.jpg&#34; width=600&gt;&lt;/div&gt;
-
 
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;ASCII码表&#34;&gt;&lt;a href=&#34;#ASCII码表&#34; class=&#34;headerlink&#34; title=&#34;ASCII码表&#34;&gt;&lt;/a&gt;ASCII码表&lt;/h2&gt;&lt;p&gt;ASCII ((American Standard Code for Information Interchange): 美国信息交换标准代码）是基于拉丁字母的一套电脑编码系统标准，ASCII 码也叫基础ASCII码，使用7 位二进制数（剩下的1位二进制为0）来表示所有的大写和小写字母，数字0 到9、标点符号，以及在美式英语中使用的特殊控制字符&lt;/p&gt;
+&lt;div align=center&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/sunyuzero/cdn/java/java4.jpg&#34; width=600&gt;&lt;/div&gt;
+
+
 </content>
         <category term="blog" />
         <category term="java学习" />
