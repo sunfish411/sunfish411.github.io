@@ -10,15 +10,15 @@
         <category>blog</category>
         <category>心路历程</category>
         <category>学习经验</category>
-        <category>ONE</category>
-        <category>数据结构</category>
         <category>比赛</category>
-        <category>BFS</category>
         <category>java学习</category>
         <category>java</category>
-        <category>算法</category>
-        <category>暴力枚举</category>
+        <category>数据结构</category>
         <category>DFS</category>
+        <category>BFS</category>
+        <category>暴力枚举</category>
+        <category>算法</category>
+        <category>ONE</category>
         <item>
             <guid isPermalink="true">http://yoursite.com/2020/09/16/csp%E5%88%9D%E4%BD%93%E9%AA%8C/</guid>
             <title>csp初体验</title>

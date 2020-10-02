@@ -7,15 +7,15 @@
     <category term="blog" />
     <category term="心路历程" />
     <category term="学习经验" />
-    <category term="ONE" />
-    <category term="数据结构" />
     <category term="比赛" />
-    <category term="BFS" />
     <category term="java学习" />
     <category term="java" />
-    <category term="算法" />
-    <category term="暴力枚举" />
+    <category term="数据结构" />
     <category term="DFS" />
+    <category term="BFS" />
+    <category term="暴力枚举" />
+    <category term="算法" />
+    <category term="ONE" />
     <entry>
         <id>http://yoursite.com/2020/09/16/csp%E5%88%9D%E4%BD%93%E9%AA%8C/</id>
         <title>csp初体验</title>

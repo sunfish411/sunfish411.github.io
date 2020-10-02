@@ -7,15 +7,15 @@
     <category term="blog" />
     <category term="心路历程" />
     <category term="学习经验" />
-    <category term="ONE" />
-    <category term="数据结构" />
     <category term="比赛" />
-    <category term="BFS" />
     <category term="java学习" />
     <category term="java" />
-    <category term="算法" />
-    <category term="暴力枚举" />
+    <category term="数据结构" />
     <category term="DFS" />
+    <category term="BFS" />
+    <category term="暴力枚举" />
+    <category term="算法" />
+    <category term="ONE" />
     <entry>
         <id>http://yoursite.com/2020/10/01/java%E7%AC%94%E8%AE%B0/</id>
         <title>java学习笔记（一）</title>
