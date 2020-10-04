@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://yoursite.com</id>
+    <title>Sunyuzero-Blog • Posts by &#34;java笔记&#34; category</title>
+    <link href="http://yoursite.com" />
+    <updated>2020-10-05T05:45:43.000Z</updated>
+    <category term="blog" />
+    <category term="心路历程" />
+    <category term="学习经验" />
+    <category term="比赛" />
+    <category term="java学习" />
+    <category term="java" />
+    <category term="数据结构" />
+    <category term="DFS" />
+    <category term="BFS" />
+    <category term="暴力枚举" />
+    <category term="算法" />
+    <category term="ONE" />
+    <entry>
+        <id>http://yoursite.com/2020/10/05/java%E5%AD%A6%E4%B9%A0(%E5%9B%9B)/</id>
+        <title>java学习(四)</title>
+        <link rel="alternate" href="http://yoursite.com/2020/10/05/java%E5%AD%A6%E4%B9%A0(%E5%9B%9B)/"/>
+        <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; java &lt;/font&gt;&lt;/center&gt;</content>
+        <category term="blog" />
+        <category term="java学习" />
+        <updated>2020-10-05T05:45:43.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://yoursite.com/2020/10/04/java%E5%AD%A6%E4%B9%A0(%E4%B8%89)/</id>
+        <title>java学习(三)</title>
+        <link rel="alternate" href="http://yoursite.com/2020/10/04/java%E5%AD%A6%E4%B9%A0(%E4%B8%89)/"/>
+        <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; java用法 &lt;/font&gt;&lt;/center&gt;
+
+&lt;h1 id=&#34;java编译器的一些优化&#34;&gt;&lt;a href=&#34;#java编译器的一些优化&#34; class=&#34;headerlink&#34; title=&#34;java编译器的一些优化&#34;&gt;&lt;/a&gt;java编译器的一些优化&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;对于byte，short，char三种类型，如果右侧赋值的数据大小没有超过范围，那么java编译器会自动加上（byte），（short），（char），例如：&lt;br&gt;byte a = 30 &amp;lt;==&amp;gt; byte a = (byte) 30&lt;/li&gt;
+&lt;li&gt;但是，当右侧赋值的数据大小超过范围后，java编译器则会直接报错&lt;/li&gt;
+&lt;li&gt;java中的加法默认将加数当作int数据类型，所以使用2个short类型的变量相加赋予另一个short类型时，编译器会报错，但是当short类型的右边赋予的是两个常量相加，那么编译器不会报错，而是会直接先将常量相加直接赋予short：&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;short&lt;/span&gt; a=&lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;short&lt;/span&gt; b=&lt;span class=&#34;number&#34;&gt;20&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;short&lt;/span&gt; c=a+b;   &lt;span class=&#34;comment&#34;&gt;//会报错&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;short&lt;/span&gt; c=&lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;+&lt;span class=&#34;number&#34;&gt;20&lt;/span&gt;;  &lt;span class=&#34;comment&#34;&gt;//正确&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+报错原因：&lt;div align=center&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/sunyuzero/cdn/java/5.png&#34; width=600&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;方法&#34;&gt;&lt;a href=&#34;#方法&#34; class=&#34;headerlink&#34; title=&#34;方法&#34;&gt;&lt;/a&gt;方法&lt;/h1&gt;&lt;h2 id=&#34;方法的注意事项&#34;&gt;&lt;a href=&#34;#方法的注意事项&#34; class=&#34;headerlink&#34; title=&#34;方法的注意事项&#34;&gt;&lt;/a&gt;方法的注意事项&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;方法必须定义在类中，且不能在方法中再定义方法&lt;/li&gt;
+&lt;li&gt;方法定义的前后顺序无所谓&lt;/li&gt;
+&lt;li&gt;如果方法有返回值，那么必须加上return返回值，不能没有&lt;/li&gt;
+&lt;li&gt;对于void方法，不能return加返回值，只能直接return；&lt;/li&gt;
+&lt;li&gt;一个方法可以有多个return语句，但是必须保证能执行的只有一个 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;方法重载&#34;&gt;&lt;a href=&#34;#方法重载&#34; class=&#34;headerlink&#34; title=&#34;方法重载&#34;&gt;&lt;/a&gt;方法重载&lt;/h2&gt;&lt;p&gt;在一个类中，我们可以定义多个方法。如果有一系列方法，它们的功能都是类似的，只有参数有所不同，那么，可以把这一组方法名做成同名方法，这种方法名相同，但各自的参数不同，称为方法重载（Overload），方法重载的目的是，功能类似的方法使用同一名字，更容易记住，因此，调用起来更简单。&lt;br&gt;例如，String类提供了多个重载方法indexOf()，可以查找子串：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;int indexOf(int ch)：根据字符的Unicode码查找；&lt;/li&gt;
+&lt;li&gt;int indexOf(String str)：根据字符串查找；&lt;/li&gt;
+&lt;li&gt;int indexOf(int ch, int fromIndex)：根据字符查找，但指定起始位置；&lt;/li&gt;
+&lt;li&gt;int indexOf(String str, int fromIndex)根据字符串查找，但指定起始位置。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;重载的注意事项&#34;&gt;&lt;a href=&#34;#重载的注意事项&#34; class=&#34;headerlink&#34; title=&#34;重载的注意事项&#34;&gt;&lt;/a&gt;重载的注意事项&lt;/h3&gt;&lt;p&gt;1.方法的重载与下列因素相关：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;参数的个数不同&lt;/li&gt;
+&lt;li&gt;参数的类型不同&lt;/li&gt;
+&lt;li&gt;参数的多类型顺序不同&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; x,&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; y)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; x,&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; y,&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; z)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; x,&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; y)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; x,&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; y)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;puclic &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; x,&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; y)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//以上正确，都能构成重载&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;2.方法的重载与下列因素无关：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;与参数的名称无关&lt;/li&gt;
+&lt;li&gt;与方法的返回值类型无关&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; x,&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; y)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;sun&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; a,&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; b)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//以上不能构成重载会报错，因为与方法参数的名称无关&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; x,&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; y)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; x,&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; y)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//以上也不能构成重载会报错，因为与方法的返回类型无关&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+</content>
+        <category term="blog" />
+        <category term="java学习" />
+        <updated>2020-10-04T05:45:43.000Z</updated>
+    </entry>
+</feed>
