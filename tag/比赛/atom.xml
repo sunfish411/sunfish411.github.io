@@ -9,14 +9,14 @@
     <category term="学习经验" />
     <category term="比赛" />
     <category term="java学习" />
-    <category term="数据结构" />
     <category term="java" />
-    <category term="BFS" />
     <category term="机器学习" />
-    <category term="算法" />
-    <category term="暴力枚举" />
+    <category term="BFS" />
+    <category term="数据结构" />
     <category term="DFS" />
+    <category term="暴力枚举" />
     <category term="ONE" />
+    <category term="算法" />
     <entry>
         <id>http://yoursite.com/2020/09/16/csp%E5%88%9D%E4%BD%93%E9%AA%8C/</id>
         <title>csp初体验</title>
