@@ -27,8 +27,7 @@
             <category>blog</category>
             <category>机器学习</category>
             <pubDate>Mon, 05 Oct 2020 20:45:43 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;从今天起，小萌新又来入坑机器学习了，学习内容参考机器学习100天。&lt;/p&gt;
-&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; 数据预处理 &lt;/font&gt;&lt;/center&gt;
+            <description><![CDATA[ &lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; 数据预处理 &lt;/font&gt;&lt;/center&gt;
 
 &lt;p&gt;数据处理可谓是机器学习的重中之重，接下来我所用到的数据集和代码如下：&lt;a href=&#34;https://github.com/sunyuzero/cdn/blob/master/csv/Data.csv&#34;&gt;数据集&lt;/a&gt;,&lt;a href=&#34;https://github.com/sunyuzero/cdn/blob/master/csv/Data.py&#34;&gt;代码&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;导入库&#34;&gt;&lt;a href=&#34;#导入库&#34; class=&#34;headerlink&#34; title=&#34;导入库&#34;&gt;&lt;/a&gt;导入库&lt;/h2&gt;&lt;p&gt;首先需要导入python库函数：&lt;/p&gt;
