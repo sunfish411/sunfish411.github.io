@@ -28,8 +28,8 @@
             <category>机器学习</category>
             <pubDate>Mon, 12 Oct 2020 20:45:43 +0800</pubDate>
             <description><![CDATA[ &lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; 简单线性回归 &lt;/font&gt;&lt;/center&gt;
-线性回归是机器学习中训练数据集的重要手段，首先是简单的线性回归，用到的代码和数据集：[数据集](https://github.com/sunyuzero/cdn/blob/master/csv/studentscores.csv),[代码](https://github.com/sunyuzero/cdn/blob/master/csv/LR.py)
 
+&lt;p&gt;线性回归是机器学习中训练数据集的重要手段，首先是简单的线性回归，用到的代码和数据集：&lt;a href=&#34;https://github.com/sunyuzero/cdn/blob/master/csv/studentscores.csv&#34;&gt;数据集&lt;/a&gt;,&lt;a href=&#34;https://github.com/sunyuzero/cdn/blob/master/csv/LR.py&#34;&gt;代码&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;导入库&#34;&gt;&lt;a href=&#34;#导入库&#34; class=&#34;headerlink&#34; title=&#34;导入库&#34;&gt;&lt;/a&gt;导入库&lt;/h2&gt;&lt;p&gt;线性回归所使用到的库如下：&lt;/p&gt;
 &lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;import pandas as pd&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;import numpy as np    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;import matplotlib.pyplot as plt&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;from sklearn.linear_model import LinearRegression&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
