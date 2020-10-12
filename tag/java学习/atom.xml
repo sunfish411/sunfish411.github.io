@@ -21,7 +21,7 @@
         <id>http://yoursite.com/2020/10/05/java%E5%AD%A6%E4%B9%A0(%E5%9B%9B)/</id>
         <title>java学习(四)</title>
         <link rel="alternate" href="http://yoursite.com/2020/10/05/java%E5%AD%A6%E4%B9%A0(%E5%9B%9B)/"/>
-        <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; java &lt;/font&gt;&lt;/center&gt;
+        <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; java数组 &lt;/font&gt;&lt;/center&gt;
 
 &lt;h1 id=&#34;数组&#34;&gt;&lt;a href=&#34;#数组&#34; class=&#34;headerlink&#34; title=&#34;数组&#34;&gt;&lt;/a&gt;数组&lt;/h1&gt;&lt;p&gt;定义一个数组类型的变量，使用数组类型“类型[]”，有以下几种创建方法:&lt;/p&gt;
 &lt;ul&gt;

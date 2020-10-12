@@ -3,7 +3,7 @@
     <id>http://yoursite.com</id>
     <title>Sunyuzero-Blog • Posts by &#34;blog&#34; category</title>
     <link href="http://yoursite.com" />
-    <updated>2020-10-05T12:45:43.000Z</updated>
+    <updated>2020-10-12T12:45:43.000Z</updated>
     <category term="blog" />
     <category term="心路历程" />
     <category term="学习经验" />
@@ -18,9 +18,32 @@
     <category term="ONE" />
     <category term="算法" />
     <entry>
-        <id>http://yoursite.com/2020/10/05/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%85%A5%E9%97%A8(%E4%B8%80)/</id>
+        <id>http://yoursite.com/2020/10/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(%E4%BA%8C)/</id>
+        <title>机器学习(二)</title>
+        <link rel="alternate" href="http://yoursite.com/2020/10/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(%E4%BA%8C)/"/>
+        <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; 简单线性回归 &lt;/font&gt;&lt;/center&gt;
+线性回归是机器学习中训练数据集的重要手段，首先是简单的线性回归，用到的代码和数据集：[数据集](https://github.com/sunyuzero/cdn/blob/master/csv/studentscores.csv),[代码](https://github.com/sunyuzero/cdn/blob/master/csv/LR.py)
+
+&lt;h2 id=&#34;导入库&#34;&gt;&lt;a href=&#34;#导入库&#34; class=&#34;headerlink&#34; title=&#34;导入库&#34;&gt;&lt;/a&gt;导入库&lt;/h2&gt;&lt;p&gt;线性回归所使用到的库如下：&lt;/p&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;import pandas as pd&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;import numpy as np    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;import matplotlib.pyplot as plt&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;from sklearn.linear_model import LinearRegression&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;导入数据集-amp-amp-拆分数据集&#34;&gt;&lt;a href=&#34;#导入数据集-amp-amp-拆分数据集&#34; class=&#34;headerlink&#34; title=&#34;导入数据集&amp;amp;&amp;amp;拆分数据集&#34;&gt;&lt;/a&gt;导入数据集&amp;amp;&amp;amp;拆分数据集&lt;/h2&gt;&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;## 导入数据集&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;dataset = pd.read_csv(&lt;span class=&#34;string&#34;&gt;&amp;#x27;studentscores.csv&amp;#x27;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;X = dataset.iloc[ : , : &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt; ].values&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Y = dataset.iloc[ : , &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt; ].values&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;## 拆分数据集&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;from&lt;/span&gt; sklearn.model_selection &lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; train_test_split&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;X_train , X_test , Y_train , Y_test = train_test_split( X , Y , test_size = &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;/&lt;span class=&#34;number&#34;&gt;4&lt;/span&gt; , random_state = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt; )&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;使用简单线性回归模型训练数据集&#34;&gt;&lt;a href=&#34;#使用简单线性回归模型训练数据集&#34; class=&#34;headerlink&#34; title=&#34;使用简单线性回归模型训练数据集&#34;&gt;&lt;/a&gt;使用简单线性回归模型训练数据集&lt;/h2&gt;&lt;p&gt;使用LinearRegression中的模型训练数据集&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;regressor = LinearRegression()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;regressor = regressor.fit( X_train , Y_train )&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;预测训练结果&#34;&gt;&lt;a href=&#34;#预测训练结果&#34; class=&#34;headerlink&#34; title=&#34;预测训练结果&#34;&gt;&lt;/a&gt;预测训练结果&lt;/h2&gt;&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Y_pred = regressor.predict( X_test )&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;结果可视化&#34;&gt;&lt;a href=&#34;#结果可视化&#34; class=&#34;headerlink&#34; title=&#34;结果可视化&#34;&gt;&lt;/a&gt;结果可视化&lt;/h2&gt;&lt;p&gt;使用matplotlib中的pyplot库可以将训练的数据集转化为图表，使结果可视化&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;plt.scatter ( X_train , Y_train , color = &lt;span class=&#34;string&#34;&gt;&amp;#x27;red&amp;#x27;&lt;/span&gt; )&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;plt.plot ( X_train , regressor.predict(X_train) , color = &lt;span class=&#34;string&#34;&gt;&amp;#x27;blue&amp;#x27;&lt;/span&gt; )&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;plt.show() &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;plt.scatter( X_test , Y_test ,color = &lt;span class=&#34;string&#34;&gt;&amp;#x27;red&amp;#x27;&lt;/span&gt; )&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;plt.plot( X_test , Y_test , color = &lt;span class=&#34;string&#34;&gt;&amp;#x27;blue&amp;#x27;&lt;/span&gt; )&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;plt.show()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <category term="blog" />
+        <category term="机器学习" />
+        <updated>2020-10-12T12:45:43.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://yoursite.com/2020/10/05/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(%E4%B8%80)/</id>
         <title>机器学习(一)</title>
-        <link rel="alternate" href="http://yoursite.com/2020/10/05/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%85%A5%E9%97%A8(%E4%B8%80)/"/>
+        <link rel="alternate" href="http://yoursite.com/2020/10/05/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(%E4%B8%80)/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; 数据预处理 &lt;/font&gt;&lt;/center&gt;
 
 &lt;p&gt;数据处理可谓是机器学习的重中之重，接下来我所用到的数据集和代码如下：&lt;a href=&#34;https://github.com/sunyuzero/cdn/blob/master/csv/Data.csv&#34;&gt;数据集&lt;/a&gt;,&lt;a href=&#34;https://github.com/sunyuzero/cdn/blob/master/csv/Data.py&#34;&gt;代码&lt;/a&gt;&lt;/p&gt;
@@ -58,7 +81,7 @@ X_test（数据集）如下，占20%：
         <id>http://yoursite.com/2020/10/05/java%E5%AD%A6%E4%B9%A0(%E5%9B%9B)/</id>
         <title>java学习(四)</title>
         <link rel="alternate" href="http://yoursite.com/2020/10/05/java%E5%AD%A6%E4%B9%A0(%E5%9B%9B)/"/>
-        <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; java &lt;/font&gt;&lt;/center&gt;
+        <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; java数组 &lt;/font&gt;&lt;/center&gt;
 
 &lt;h1 id=&#34;数组&#34;&gt;&lt;a href=&#34;#数组&#34; class=&#34;headerlink&#34; title=&#34;数组&#34;&gt;&lt;/a&gt;数组&lt;/h1&gt;&lt;p&gt;定义一个数组类型的变量，使用数组类型“类型[]”，有以下几种创建方法:&lt;/p&gt;
 &lt;ul&gt;
