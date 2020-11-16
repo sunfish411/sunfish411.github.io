@@ -243,7 +243,69 @@ class C implements interfaceA   //多个类实现同一个接口&lt;/code&gt;&lt
 &lt;li&gt;同样的，一般我们使用equals()都要对其进行重写，例如String就对equals方法进行了重写，所以String字符串使用equals方法比较的是字符串内容而不是地址值&lt;/li&gt;
 &lt;li&gt;null是不能调用方法的，所以使用null.equals(obj)方法将会出现空指针异常，所以我们对字符串使用equals方法时，最好使用第二种形式，防止字符串为空调用方法而抛出空指针异常&lt;/li&gt;
 &lt;/ul&gt;
- ]]></description>
+&lt;h1 id=&#34;Date类&#34;&gt;&lt;a href=&#34;#Date类&#34; class=&#34;headerlink&#34; title=&#34;Date类&#34;&gt;&lt;/a&gt;Date类&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Date类位于java.util.Date包下，是与时间相关的一个工具类，Date的构造方法的常见重载形式有2种：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.无参数的构造方法&lt;br&gt;无参数的Date构造方法将会获取当前的系统时间&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Date date = new Date();   //获取系统的当前时间&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;2.有参数的构造方法&lt;br&gt;有参数的Data构造方法中，其参数应为long类型的数，代表毫秒值，获取从初始时间后的多少毫秒之后的时间&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Date date = new Date(long num);   //获取从1970年1月1日0分0秒之后的num毫秒的时间&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;getTime函数&lt;br&gt;getTime（）函数用于返回调用的Data对象距离初始时间1970年的时间，返回值是毫秒值&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Date date = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; Date();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;long&lt;/span&gt; time = date.getTime();   &lt;span class=&#34;comment&#34;&gt;//time=1605524769466&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Date的格式化和格式化的日期转换&#34;&gt;&lt;a href=&#34;#Date的格式化和格式化的日期转换&#34; class=&#34;headerlink&#34; title=&#34;Date的格式化和格式化的日期转换&#34;&gt;&lt;/a&gt;Date的格式化和格式化的日期转换&lt;/h2&gt;&lt;p&gt;DateFormat类是一个抽象类，我们不能直接使用，而SimpleDateFormat类是DateFormat类的一个实现子类，我们可以直接使用来对日期进行格式化，simpleDateFormat类的构造方法使用了类似于正则表达式的模式匹配，用不同的模式来构造出不同的日期格式，具体如下图所示：&lt;/p&gt;
+&lt;div align=center&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/sunyuzero/cdn/java/java27.png&#34; width=600&gt;&lt;/div&gt;
+- format方法：对日期进行格式化
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Date date = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; Date();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;SimpleDateFormat sdf1 = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; SimpleDateFormat(&lt;span class=&#34;string&#34;&gt;&amp;quot;yyyy-MM-dd HH:mm:ss&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;SimpleDateFormat sdf2 = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; SimpleDateFormat(&lt;span class=&#34;string&#34;&gt;&amp;quot;yyyy年MM月dd日 HH时mm分ss秒&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;String text1 = sdf1.format(date);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;String text2 = sdf2.format(date);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;System.out.println(date);      &lt;span class=&#34;comment&#34;&gt;//Mon Nov 16 19:28:06 CST 2020&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;System.out.println(text1);      &lt;span class=&#34;comment&#34;&gt;//2020-11-16 19:28:06&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;System.out.println(text);       &lt;span class=&#34;comment&#34;&gt;//2020年11月16日 19时31分56秒&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+&lt;li&gt;parse方法，还原格式化的日期&lt;br&gt;parse方法将格式化的日期文本还原为日期形式，它声明了一个异常ParseException，当模式与日期文本不匹配时抛出异常，所以在使用时一定要声明异常或者使用try，catch自己解决异常&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;parseDemo&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;throws&lt;/span&gt; ParseException&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    SimpleDateFormat sdf = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; SimpleDateFormat(&lt;span class=&#34;string&#34;&gt;&amp;quot;yyyy年MM月dd日 HH时mm分ss秒&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    Date date = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; Date();         &lt;span class=&#34;comment&#34;&gt;//Mon Nov 16 19:47:37 CST 2020&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    String text = sdf.format(date);     &lt;span class=&#34;comment&#34;&gt;//2020年11月16日 19时47分37秒&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    Date date1 = sdf.parse(text);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    System.out.println(date1);     &lt;span class=&#34;comment&#34;&gt;//Mon Nov 16 19:47:37 CST 2020&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;StringBuilder类&#34;&gt;&lt;a href=&#34;#StringBuilder类&#34; class=&#34;headerlink&#34; title=&#34;StringBuilder类&#34;&gt;&lt;/a&gt;StringBuilder类&lt;/h1&gt;&lt;p&gt;StringBuilder类是对字符串进行操作的一个工具类，使用StringBuilder类的好处是方便，节省空间：因为String类的底层是final修饰的字符数组，所以导致了字符串的不可改变，而StringBuilder类的底层是没有final修饰的字符数组，所以它可变。&lt;/p&gt;
+&lt;div align=center&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/sunyuzero/cdn/java/java28.png&#34; width=600&gt;&lt;/div&gt;
+- StringBuilder的构造方法
+1.无参构造方法,将会创建一个空字符串
+StringBuilder SB = new StringBuilder();
+2.有参构造方法，将会将StringBuilder对象的内容初始化为传递的参数
+StringBuilder sb = new StringBuilder(&#34;abc&#34;);
+- append()方法
+append方法用于向StringBuilder对象的后面加上一个字符串,返回值为this，即调用该方法的对象：    
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;StringBuilder sb = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; StringBUilder();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;String sb1 = sb.append(&lt;span class=&#34;string&#34;&gt;&amp;quot;abc&amp;quot;&lt;/span&gt;);   &lt;span class=&#34;comment&#34;&gt;//此时sb=sb1=&amp;quot;abc&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+- delete(int start,int end)方法
+delete方法用于删除StringBuilder对象的从start到end-1之间的内容，返回值也是this：
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;StringBuilder sb = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; StringBuilder();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sb.apend(&lt;span class=&#34;string&#34;&gt;&amp;quot;abc&amp;quot;&lt;/span&gt;);     &lt;span class=&#34;comment&#34;&gt;//sb=&amp;quot;abc&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sb.delete(&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;System.out.println(sb);    &lt;span class=&#34;comment&#34;&gt;//sb=&amp;quot;ac&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+- reverse()方法
+reverse方法可以将StringBuilder对象的内容反转
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;StringBuilder sb = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; StringBuilder(&lt;span class=&#34;string&#34;&gt;&amp;quot;abc&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sb.reverse();    &lt;span class=&#34;comment&#34;&gt;//sb=cba&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+- toString()方法
+toString方法可以将StringBuilder对象转换为String对象：
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;StringBuilder sb = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; StringBuilder();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;String str = sb.toString();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h1 id=&#34;包装类&#34;&gt;&lt;a href=&#34;#包装类&#34; class=&#34;headerlink&#34; title=&#34;包装类&#34;&gt;&lt;/a&gt;包装类&lt;/h1&gt;&lt;p&gt;包装类就是把8种基本的数据类型封装到类中进行操作，下面以Interger为例说明：&lt;/p&gt;
+&lt;h2 id=&#34;装箱与拆箱&#34;&gt;&lt;a href=&#34;#装箱与拆箱&#34; class=&#34;headerlink&#34; title=&#34;装箱与拆箱&#34;&gt;&lt;/a&gt;装箱与拆箱&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;装箱：装修就是把基本数据类型转换为包装类的对象&lt;br&gt;Inter类就是对int数据类型的封装，其构造方法如下：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.Interger in1 = new Interger(1);   //参数为int类型&lt;br&gt;2.Interger in2 = new Interger(“1”);   //参数为字符串类型，字符串类型的内容必须为int类型&lt;br&gt;在使用IDEA时用Interger的构造方法时，会发现Interger上会有一条横线，这代表这这个方法已经过时，不建议使用，所以相比于构造方法，还有2个静态方法生成Interger对象,效果等同于构造方法：&lt;br&gt;1.Interger in3 = Interger.valueOf(1);&lt;br&gt;2.Interger in4 = Interger.valueOf(“1”);     &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;拆箱：拆箱就是把包装类的对象转换为基本数据类型&lt;br&gt;interger in1 = new Interger(1);    //装箱&lt;br&gt;int i = in1.intValue();         //拆箱&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;自动装箱与拆箱&#34;&gt;&lt;a href=&#34;#自动装箱与拆箱&#34; class=&#34;headerlink&#34; title=&#34;自动装箱与拆箱&#34;&gt;&lt;/a&gt;自动装箱与拆箱&lt;/h2&gt;&lt;p&gt;自动装箱与拆箱就是自动将包装类对象和基本数据类型进行转换，Interger类的构造方法过时的原因就是jdk的新特性：自动装箱与拆箱&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;自动装箱&lt;br&gt;自动装箱就是省略了构造方法来将基本数据类型转为包装类对象,eg：&lt;br&gt;Interger in = 1;&lt;/li&gt;
+&lt;li&gt;自动拆箱&lt;br&gt;自动拆箱就是将包装类对象转为基本数据类型,eg：&lt;br&gt;Interger in = 1;&lt;br&gt;in = in + 1;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;字符串转变为其他基本数据类型&#34;&gt;&lt;a href=&#34;#字符串转变为其他基本数据类型&#34; class=&#34;headerlink&#34; title=&#34;字符串转变为其他基本数据类型&#34;&gt;&lt;/a&gt;字符串转变为其他基本数据类型&lt;/h2&gt;&lt;p&gt;将其他类型转变为字符串有toString方法和valueOf方法，而将字符串转变为其他数据类型有parseInt，parseDouble等方法，使用方法为：&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;String str = &lt;span class=&#34;string&#34;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i = Interger.parseInt(str);  &lt;span class=&#34;comment&#34;&gt;//i=100&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;注意事项：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;转变为其他数据类型的字符串的内容必须和转变的基本数据类型相同&lt;/li&gt;
+&lt;li&gt;使用parseInt只能由Interger调用，并且只能赋值给int变量，其他数据类型同理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;collection集合&#34;&gt;&lt;a href=&#34;#collection集合&#34; class=&#34;headerlink&#34; title=&#34;collection集合&#34;&gt;&lt;/a&gt;collection集合&lt;/h1&gt; ]]></description>
         </item>
         <item>
             <guid isPermalink="true">http://yoursite.com/2020/10/01/java%E7%AC%94%E8%AE%B0/</guid>
