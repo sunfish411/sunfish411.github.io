@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/12/11/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
+    <loc>http://yoursite.com/2020/12/10/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
     
-    <lastmod>2020-12-11</lastmod>
+    <lastmod>2021-03-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/12/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
+    
+    <lastmod>2021-03-18</lastmod>
     
   </url>
   
@@ -31,13 +38,6 @@
   
   <url>
     <loc>http://yoursite.com/2020/12/10/JAVA%E9%9B%86%E5%90%88/</loc>
-    
-    <lastmod>2020-12-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/12/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
     
     <lastmod>2020-12-10</lastmod>
     
@@ -172,7 +172,7 @@
 
   <url>
     <loc>http://yoursite.com/</loc>
-    <lastmod>2020-12-13</lastmod>
+    <lastmod>2021-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -180,91 +180,91 @@
   
   <url>
     <loc>http://yoursite.com/tags/blog/</loc>
-    <lastmod>2020-12-13</lastmod>
+    <lastmod>2021-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite.com/tags/%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B/</loc>
-    <lastmod>2020-12-13</lastmod>
+    <lastmod>2021-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%BB%8F%E9%AA%8C/</loc>
-    <lastmod>2020-12-13</lastmod>
+    <lastmod>2021-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite.com/tags/%E6%AF%94%E8%B5%9B/</loc>
-    <lastmod>2020-12-13</lastmod>
+    <lastmod>2021-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite.com/tags/java%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2020-12-13</lastmod>
+    <lastmod>2021-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite.com/tags/java/</loc>
-    <lastmod>2020-12-13</lastmod>
+    <lastmod>2021-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2020-12-13</lastmod>
+    <lastmod>2021-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite.com/tags/BFS/</loc>
-    <lastmod>2020-12-13</lastmod>
+    <lastmod>2021-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
-    <lastmod>2020-12-13</lastmod>
+    <lastmod>2021-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite.com/tags/DFS/</loc>
-    <lastmod>2020-12-13</lastmod>
+    <lastmod>2021-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite.com/tags/%E6%9A%B4%E5%8A%9B%E6%9E%9A%E4%B8%BE/</loc>
-    <lastmod>2020-12-13</lastmod>
+    <lastmod>2021-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite.com/tags/ONE/</loc>
-    <lastmod>2020-12-13</lastmod>
+    <lastmod>2021-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite.com/tags/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2020-12-13</lastmod>
+    <lastmod>2021-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -273,35 +273,35 @@
   
   <url>
     <loc>http://yoursite.com/categories/blog/</loc>
-    <lastmod>2020-12-13</lastmod>
+    <lastmod>2021-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite.com/categories/blog/%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B/</loc>
-    <lastmod>2020-12-13</lastmod>
+    <lastmod>2021-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite.com/categories/blog/%E5%AD%A6%E4%B9%A0%E7%BB%8F%E9%AA%8C/</loc>
-    <lastmod>2020-12-13</lastmod>
+    <lastmod>2021-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite.com/categories/blog/java%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2020-12-13</lastmod>
+    <lastmod>2021-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite.com/categories/blog/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2020-12-13</lastmod>
+    <lastmod>2021-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
