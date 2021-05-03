@@ -3,7 +3,7 @@
     <id>http://yoursite.com</id>
     <title>Sunyuzero-Blog</title>
     <link href="http://yoursite.com" />
-    <updated>2020-12-10T05:45:43.000Z</updated>
+    <updated>2021-05-03T08:56:18.010Z</updated>
     <category term="blog" />
     <category term="心路历程" />
     <category term="学习经验" />
@@ -17,6 +17,82 @@
     <category term="暴力枚举" />
     <category term="ONE" />
     <category term="算法" />
+    <entry>
+        <id>http://yoursite.com/2021/05/03/YcYd/</id>
+        <title></title>
+        <link rel="alternate" href="http://yoursite.com/2021/05/03/YcYd/"/>
+        <content type="html">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&#34;utf-8&#34;&gt;
+&lt;!--樱花特效在线引入--&gt;
+&lt;script src=&#34;https://files.cnblogs.com/files/quaint/sakuraPlus.js&#34;&gt;&lt;/script&gt;
+&lt;title&gt;YDDDD&lt;/title&gt;
+  &lt;script&gt;
+    var timer=null;
+ 
+    function stopClock(){
+      clearTimeout(timer);
+    }
+    //开始计时
+    function startClock() {
+		// 指定日期和时间
+		var EndTime = new Date(&#34;2021/05/03 16:12:00&#34;);
+		// 当前系统时间
+		var NowTime = new Date();
+		var t = EndTime.getTime() - NowTime.getTime();
+		var d = Math.floor(t / 1000 / 60 / 60 / 24);
+		var h = Math.floor(t / 1000 / 60 / 60 % 24);
+		var m = Math.floor(t / 1000 / 60 % 60);
+		var s = Math.floor(t / 1000 % 60);
+		var html = d + &#34; 天&#34; + h + &#34; 时&#34; + m + &#34; 分&#34; + s + &#34; 秒&#34;;
+		if(t&gt;=0) show.innerHTML=&#34;倒计时&#34;+html;
+		else show.innerHTML=&#34;可以打开专属你的惊喜啦&#34;;
+		timer=setTimeout(&#34;startClock()&#34;,1000);//延时器
+		if(t&lt;=0) document.getElementById(&#34;yd&#34;).style.display=&#34;block&#34;;
+	}
+  &lt;/script&gt;
+&lt;/head&gt;
+  &lt;style&gt;
+  #show{
+    font-size: 52px;
+    color:palegreen;
+    text-align:center;
+  }
+  #btn{
+    font-size: 52px;
+    color:palegreen;
+    text-align:center;
+  }
+  &lt;/style&gt;
+  &lt;style type=&#34;text/css&#34;&gt;
+     button {  
+		margin:auto;
+        width: 600px;  
+        padding:28px;  
+        background-color: #FFC0CB;  
+        border-color: #357ebd;  
+        color: #fff;  
+        -moz-border-radius: 100px;  
+        -webkit-border-radius: 10px;  
+        border-radius: 10px; /* future proofing */  
+        -khtml-border-radius: 10px; /* for old Konqueror browsers */  
+        text-align: center;  
+        vertical-align: middle;  
+        border: 1px solid transparent;  
+        font-weight: 500;  
+        font-size:100%  
+      }  
+   &lt;/style&gt;
+&lt;body onload=&#34;startClock()&#34; onunload=&#34;stopClock()&#34;&gt;
+  &lt;div id=&#34;show&#34;&gt;&lt;/div&gt;
+  &lt;div id=&#34;btn&#34;&gt;
+	&lt;button id=&#34;yd&#34;  style=&#34;display: none;&#34; onclick=&#34;javascrtpt:window.location.href=&#39;https://sunyuzero.github.io/YcYd&#39;&#34;&gt;点我传送到惊喜的地方&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+        <updated>2021-05-03T08:56:18.010Z</updated>
+    </entry>
     <entry>
         <id>http://yoursite.com/2020/12/10/JAVA%E9%9B%86%E5%90%88/</id>
         <title>java集合</title>
@@ -474,6 +550,20 @@ String s = it.next();   //s=&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;void clear ()         // 清除所有装载的 键 - 值对。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;package&lt;/span&gt; IOlearining;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; java.io.File;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; java.io.FileOutputStream;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; java.io.IOException;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; java.util.Properties;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; java.util.Set;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;ProportyTest&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(String[] args)&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;throws&lt;/span&gt; IOException &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        File file = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; File(&lt;span class=&#34;string&#34;&gt;&amp;quot;D:/javaTestFile/1.proporties&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//配置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        Properties pro = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; Properties();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        pro.setProperty(&lt;span class=&#34;string&#34;&gt;&amp;quot;font-size&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;15px&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        pro.setProperty(&lt;span class=&#34;string&#34;&gt;&amp;quot;font-color&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;black&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(pro.getProperty(&lt;span class=&#34;string&#34;&gt;&amp;quot;font-size&amp;quot;&lt;/span&gt;));        &lt;span class=&#34;comment&#34;&gt;//15px&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(pro.getProperty(&lt;span class=&#34;string&#34;&gt;&amp;quot;font-color&amp;quot;&lt;/span&gt;));       &lt;span class=&#34;comment&#34;&gt;//black&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        Set&amp;lt;String&amp;gt; setPro = pro.stringPropertyNames();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(String key : setPro)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            System.out.println(key + &lt;span class=&#34;string&#34;&gt;&amp;quot; : &amp;quot;&lt;/span&gt; + pro.getProperty(key));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;comment&#34;&gt;//依次输出：font-color : black      font-size : 15px&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//将配置存储到文件中&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        pro.store(&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; FileOutputStream(file),&lt;span class=&#34;string&#34;&gt;&amp;quot;文件注释&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        pro.clear();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <category term="blog" />
+        <category term="java学习" />
+        <category term="java" />
+        <updated>2020-12-10T05:45:43.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://yoursite.com/2020/12/10/%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98/</id>
+        <title>网络编程</title>
+        <link rel="alternate" href="http://yoursite.com/2020/12/10/%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98/"/>
+        <content type="html">&lt;h2 id=&#34;关于求解字符串中出现的次数最多的子序列问题&#34;&gt;&lt;a href=&#34;#关于求解字符串中出现的次数最多的子序列问题&#34; class=&#34;headerlink&#34; title=&#34;关于求解字符串中出现的次数最多的子序列问题&#34;&gt;&lt;/a&gt;关于求解字符串中出现的次数最多的子序列问题&lt;/h2&gt;&lt;p&gt;关于这类题目有一个简单求解算法，大概思路如下：&lt;/p&gt;
+&lt;p&gt;首先来看看一个题目&lt;/p&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;【问题描述】&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;NOIP 复赛之前，HSD 桑进行了一项研究，发现人某条染色体上的一段 DNA 序列中连续的  个碱基组成的碱基序列与做题的 AC 率有关！于是他想研究一下这种关系。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;现在给出一段 DNA 序列，请帮他求出这段 DNA 序列中所有连续  个碱基形成的碱基序列中，出现最多的一种的出现次数。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;【输入形式】&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;两行，第一行为一段 DNA 序列，保证 DNA 序列合法，即只含有 A, G, C, T 四种碱基；&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;第二行为一个正整数 ，意义与题目描述相同。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;【输出形式】&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;一行，一个正整数，为题目描述中所求答案。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;【样例输入】&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ACTCACTC&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;【样例输出】&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;【样例说明】&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;对于这段 DNA 序列，连续的  个碱基组成的碱基序列为：ACTC, CTCA, TCAC 与 CACT。其中 ACTC 出现  次，其余均出现  次，所以出现最多的次数为 ，即为答案。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;分析&#34;&gt;&lt;a href=&#34;#分析&#34; class=&#34;headerlink&#34; title=&#34;分析&#34;&gt;&lt;/a&gt;分析&lt;/h3&gt;</content>
         <category term="blog" />
         <category term="java学习" />
         <category term="java" />
@@ -1367,24 +1457,5 @@ BFS，广度优先搜索，也称深度优先搜索，即搜索每次可达的�
         <category term="学习经验" />
         <category term="数据结构" />
         <updated>2020-08-27T10:45:43.000Z</updated>
-    </entry>
-    <entry>
-        <id>http://yoursite.com/2020/08/13/%E8%90%8C%E6%96%B0%E6%9D%A5%E4%BA%86/</id>
-        <title>萌新报道</title>
-        <link rel="alternate" href="http://yoursite.com/2020/08/13/%E8%90%8C%E6%96%B0%E6%9D%A5%E4%BA%86/"/>
-        <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=20&gt; 萌新来报道力 &lt;/font&gt;&lt;/center&gt;
-
-&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
-
-&lt;p&gt;&amp;emsp;&lt;font size=3&gt;入坑计算机领域已经一年有余，终于创建了第一个自己的博客了。在这个博客中，我将分享自己学习的心路历程，知识经验等等，不断总结，不断进步。登高山务攻绝顶，赏大雪莫畏严寒！！！&lt;/font&gt;&lt;/p&gt;
-&lt;br/&gt;
-
-&lt;div align=center&gt;&lt;img src=&#34;https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2062307482,1942308797&amp;fm=26&amp;gp=0.jpg&#34; width=600&gt;&lt;/div&gt;
-
-</content>
-        <category term="blog" />
-        <category term="心路历程" />
-        <category term="ONE" />
-        <updated>2020-08-13T02:45:43.000Z</updated>
     </entry>
 </feed>
