@@ -3,13 +3,13 @@
     <id>http://yoursite.com</id>
     <title>Sunyuzero-Blog</title>
     <link href="http://yoursite.com" />
-    <updated>2021-04-30T16:00:00.000Z</updated>
+    <updated>2021-05-14T16:00:00.000Z</updated>
     <category term="blog" />
     <category term="YD" />
     <entry>
-        <id>http://yoursite.com/2021/05/01/YD/</id>
+        <id>http://yoursite.com/2021/05/15/YD/</id>
         <title>你就这样走进了我的生活</title>
-        <link rel="alternate" href="http://yoursite.com/2021/05/01/YD/"/>
+        <link rel="alternate" href="http://yoursite.com/2021/05/15/YD/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; 你就这样走进了我的生活 &lt;/font&gt;&lt;/center&gt;
 &lt;font face=&#34;楷体&#34; size=5&gt;下面的是独属于YcYd的故事&lt;/font&gt;
 
@@ -29,6 +29,6 @@
 </content>
         <category term="blog" />
         <category term="YD" />
-        <updated>2021-04-30T16:00:00.000Z</updated>
+        <updated>2021-05-14T16:00:00.000Z</updated>
     </entry>
 </feed>
