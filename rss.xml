@@ -5,22 +5,109 @@
         <link>http://yoursite.com</link>
         <description></description>
         <language>en| zh-CN | zh-TW</language>
-        <pubDate>Thu, 10 Dec 2020 13:45:43 +0800</pubDate>
-        <lastBuildDate>Thu, 10 Dec 2020 13:45:43 +0800</lastBuildDate>
+        <pubDate>Wed, 08 Sep 2021 15:19:11 +0800</pubDate>
+        <lastBuildDate>Wed, 08 Sep 2021 15:19:11 +0800</lastBuildDate>
         <category>blog</category>
-        <category>心路历程</category>
+        <category>学习</category>
         <category>java</category>
+        <category>心路历程</category>
+        <category>算法</category>
         <category>机器学习</category>
         <category>ONE</category>
-        <category>算法</category>
-        <category>学习</category>
+        <item>
+            <guid isPermalink="true">http://yoursite.com/2021/09/08/LeetCode%E5%88%B7%E9%A2%98%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/</guid>
+            <title></title>
+            <link>http://yoursite.com/2021/09/08/LeetCode%E5%88%B7%E9%A2%98%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/</link>
+            <pubDate>Wed, 08 Sep 2021 15:19:11 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;LeetCode刷题日记——初级算法&#34;&gt;&lt;a href=&#34;#LeetCode刷题日记——初级算法&#34; class=&#34;headerlink&#34; title=&#34;LeetCode刷题日记——初级算法&#34;&gt;&lt;/a&gt;LeetCode刷题日记——初级算法&lt;/h1&gt;&lt;h3 id=&#34;1-买卖股票的最佳时机&#34;&gt;&lt;a href=&#34;#1-买卖股票的最佳时机&#34; class=&#34;headerlink&#34; title=&#34;1.买卖股票的最佳时机&#34;&gt;&lt;/a&gt;1.买卖股票的最佳时机&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;题目大意&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;给定一个数组 prices ，其中 prices[i] 是一支给定股票第 i 天的价格。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;设计一个算法来计算你所能获取的最大利润。你可以尽可能地完成更多的交易（多次买卖一支股票）。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;注意：你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;示例:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;输入: prices &amp;#x3D; [7,1,5,3,6,4]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;输出: 7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;解释: 在第 2 天（股票价格 &amp;#x3D; 1）的时候买入，在第 3 天（股票价格 &amp;#x3D; 5）的时候卖出, 这笔交易所能获得利润 &amp;#x3D; 5-1 &amp;#x3D; 4 。随后，在第 4 天（股票价格 &amp;#x3D; 3）的时候买入，在第 5 天（股票价格 &amp;#x3D; 6）的时候卖出, 这笔交易所能获得利润 &amp;#x3D; 6-3 &amp;#x3D; 3 。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;动态规划解题&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;​    建立一个二维数组，&lt;code&gt;dp[i][0]&lt;/code&gt;代表第i天手中没有股票时的现有利润，&lt;code&gt;dp[i][1]&lt;/code&gt; 代表第i天手中有股票时的最大利润，则递推公式如下：&lt;code&gt;dp[i][0]=max(dp[i-1][0],dp[i-1][1]+prices[i])&lt;/code&gt;,&lt;code&gt;dp[i][1]=max(dp[i-1][0]-prices[i],dp[i-1][1])&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;maxProfit&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;[] prices)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; len = prices.length;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;[][] dp = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;[len][&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        dp[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;][&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;]=&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        dp[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;][&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;]=-prices[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;i&amp;lt;len;i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            dp[i][&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;] = Math.max(dp[i-&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;][&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;],dp[i-&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;][&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;]+prices[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            dp[i][&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;] = Math.max(dp[i-&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;][&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;]-prices[i],dp[i-&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;][&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; dp[len-&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;][&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;贪心算法解题&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;​    贪心算法，即局部最优，只需要在prices数组中从头开始遍历，找到开始上涨的最小值，然后这一上涨阶段的最大值，最小值买入，最大值卖出，就能获得最大利润&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;maxProfit&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;[] prices)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; len = prices.length;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; ans=&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;i&amp;lt;len;i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          ans += Math.max(&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;,prices[i]-prices[i-&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; ans;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;2-旋转数组&#34;&gt;&lt;a href=&#34;#2-旋转数组&#34; class=&#34;headerlink&#34; title=&#34;2.旋转数组&#34;&gt;&lt;/a&gt;2.旋转数组&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;题目大意&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;给定一个数组，将数组中的元素向右移动 k 个位置，其中 k 是非负数。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;示例:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;输入: nums &amp;#x3D; [1,2,3,4,5,6,7], k &amp;#x3D; 3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;输出: [5,6,7,1,2,3,4]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;解释:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;向右旋转 1 步: [7,1,2,3,4,5,6]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;向右旋转 2 步: [6,7,1,2,3,4,5]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;向右旋转 3 步: [5,6,7,1,2,3,4]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;题解&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;以题目示例来说，旋转之后，左边的4个元素整体和右边的3个元素整体将会交换位置，可以先将整体交换，即直接反转元素，然后在每个部分中再反转即可。&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;rotate&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;[] nums, &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; k)&lt;/span&gt; &lt;/span&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; len = nums.length;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       k %= len;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       reverse(nums,&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;,len-&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       reverse(nums,&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;,k-&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       reverse(nums,k,len-&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; num : nums) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           System.out.println(num);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;reverse&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;[] nums,&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; start, &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; end)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt; (start&amp;lt;end)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; temp = nums[start];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           nums[start++]=nums[end];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           nums[end--]=temp;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;3-存在重复元素&#34;&gt;&lt;a href=&#34;#3-存在重复元素&#34; class=&#34;headerlink&#34; title=&#34;3.存在重复元素&#34;&gt;&lt;/a&gt;3.存在重复元素&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;题目大意&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;给定一个整数数组，判断是否存在重复元素。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;如果存在一值在数组中出现至少两次，函数返回 true 。如果数组中每个元素都不相同，则返回 false 。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;示例 1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;输入: [1,2,3,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;输出: true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;解题思路—set&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;直接暴力求解的话效率非常低，可以使用set的add方法一个特性：当添加的对象在set中已经存在，会add失败返回false。&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;boolean&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;containsDuplicate&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;[] nums)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        Set&amp;lt;Integer&amp;gt; set = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; HashSet&amp;lt;&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i : nums)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(!set.add(i)) &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;解题思路—排序后比较&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;可以使用java内置的排序函数，先进行排序，在用O（n）的时间复杂度进行比较，最后的时间复杂度为排序的时间复杂度nlogn，使用leetcode发现这一种方法所使用的时间和空间要优于使用set&lt;/p&gt;
+&lt;h3 id=&#34;4-只出现一次的数字&#34;&gt;&lt;a href=&#34;#4-只出现一次的数字&#34; class=&#34;headerlink&#34; title=&#34;4.只出现一次的数字&#34;&gt;&lt;/a&gt;4.只出现一次的数字&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;题目大意&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;解题思路—异或&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;利用位运算符异或，相同的数字异或为0，然后任何数与0异或为本身，所以直接将所有数字进行异或即可&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;singleNumber&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;[] nums)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; ans=&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i=&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;i&amp;lt;nums.length;i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            ans=ans^nums[i];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; ans;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+
+&lt;blockquote&gt;
+&lt;p&gt;解题思路—set&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;使用set的add特性，当添加失败时说明其为重复元素，直接将它移除，最后set只剩下一个不重复的元素，这个的效率不如上一种方法&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;singleNumber&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;[] nums)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;         Set&amp;lt;Integer&amp;gt; set = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; HashSet&amp;lt;&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i=&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;i&amp;lt;nums.length;i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(!set.add(nums[i]))&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                set.remove(nums[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;)set.toArray()[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+
+&lt;h3 id=&#34;5-字符串中的第一个唯一字符&#34;&gt;&lt;a href=&#34;#5-字符串中的第一个唯一字符&#34; class=&#34;headerlink&#34; title=&#34;5.字符串中的第一个唯一字符&#34;&gt;&lt;/a&gt;5.字符串中的第一个唯一字符&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;题目大意&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;给定一个字符串，找到它的第一个不重复的字符，并返回它的索引。如果不存在，则返回 -1。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;示例：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;s &amp;#x3D; &amp;quot;leetcode&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;返回 0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;s &amp;#x3D; &amp;quot;loveleetcode&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;返回 2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;解题思路&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;关于字符串的问题要善于运用一个一维数组a[26]，来记录每一个字符的出现次数。遍历给定字符串的每一个字符，出现一次便在数组中加一，最后按顺序遍历找出值为一的元素索引返回，不存在即返回-1。&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;firstUniqChar&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(String s)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; a[] = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;[&lt;span class=&#34;number&#34;&gt;26&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i=&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;i&amp;lt;s.length();i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           a[s.charAt(i)-&lt;span class=&#34;string&#34;&gt;&amp;#x27;a&amp;#x27;&lt;/span&gt;]++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i=&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;i&amp;lt;s.length();i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(a[s.charAt(i)-&lt;span class=&#34;string&#34;&gt;&amp;#x27;a&amp;#x27;&lt;/span&gt;]==&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; i;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; -&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://yoursite.com/2020/12/10/JAVA%E9%9B%86%E5%90%88/</guid>
             <title>java集合</title>
             <link>http://yoursite.com/2020/12/10/JAVA%E9%9B%86%E5%90%88/</link>
             <category>blog</category>
-            <category>java</category>
             <category>学习</category>
+            <category>java</category>
             <pubDate>Thu, 10 Dec 2020 13:45:43 +0800</pubDate>
             <description><![CDATA[ &lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; JAVA集合 &lt;/font&gt;&lt;/center&gt;
 
@@ -157,8 +244,8 @@ String s = it.next();   //s=&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/pre&gt;
             <title>java正则表达式</title>
             <link>http://yoursite.com/2020/12/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
             <category>blog</category>
-            <category>java</category>
             <category>学习</category>
+            <category>java</category>
             <pubDate>Thu, 10 Dec 2020 13:45:43 +0800</pubDate>
             <description><![CDATA[ &lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; JAVA正则表达式 &lt;/font&gt;&lt;/center&gt;
 
@@ -196,8 +283,8 @@ String s = it.next();   //s=&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/pre&gt;
             <title>网络编程</title>
             <link>http://yoursite.com/2020/12/10/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</link>
             <category>blog</category>
-            <category>java</category>
             <category>学习</category>
+            <category>java</category>
             <pubDate>Thu, 10 Dec 2020 13:45:43 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;网络编程&#34;&gt;&lt;a href=&#34;#网络编程&#34; class=&#34;headerlink&#34; title=&#34;网络编程&#34;&gt;&lt;/a&gt;网络编程&lt;/h1&gt;&lt;p&gt;网络编程，就是在一定的协议下，实现两台计算机的通信的程序。网络传输的TCP/IP协议如下：&lt;/p&gt;
 &lt;div align=center&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/sunyuzero/cdn/java/java43.png&#34; width=600&gt;&lt;/div&gt;
@@ -295,8 +382,8 @@ String s = it.next();   //s=&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/pre&gt;
             <title>java上课笔记</title>
             <link>http://yoursite.com/2020/12/10/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C&amp;IO%E6%B5%81/</link>
             <category>blog</category>
-            <category>java</category>
             <category>学习</category>
+            <category>java</category>
             <pubDate>Thu, 10 Dec 2020 13:45:43 +0800</pubDate>
             <description><![CDATA[ &lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; JAVA文件操作&amp;IO流 &lt;/font&gt;&lt;/center&gt;
 
@@ -494,8 +581,8 @@ String s = it.next();   //s=&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/pre&gt;
             <title>java上课笔记</title>
             <link>http://yoursite.com/2020/12/08/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/</link>
             <category>blog</category>
-            <category>java</category>
             <category>学习</category>
+            <category>java</category>
             <pubDate>Tue, 08 Dec 2020 13:45:43 +0800</pubDate>
             <description><![CDATA[ &lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; java课程笔记 &lt;/font&gt;&lt;/center&gt;
 
@@ -612,8 +699,8 @@ String s = it.next();   //s=&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/pre&gt;
             <title>java学线程</title>
             <link>http://yoursite.com/2020/10/18/%E7%BA%BF%E7%A8%8B/</link>
             <category>blog</category>
-            <category>java</category>
             <category>学习</category>
+            <category>java</category>
             <pubDate>Sun, 18 Oct 2020 13:45:43 +0800</pubDate>
             <description><![CDATA[ &lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; java线程 &lt;/font&gt;&lt;/center&gt;
 
@@ -671,8 +758,8 @@ Synchronized能够实现同步的原因是：
             <title>java学习笔记（二）</title>
             <link>http://yoursite.com/2020/10/18/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/</link>
             <category>blog</category>
-            <category>java</category>
             <category>学习</category>
+            <category>java</category>
             <pubDate>Sun, 18 Oct 2020 13:45:43 +0800</pubDate>
             <description><![CDATA[ &lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; java学习笔记 &lt;/font&gt;&lt;/center&gt;
 
@@ -1030,8 +1117,8 @@ X_test（数据集）如下，占20%：
             <title>java学习笔记（一）</title>
             <link>http://yoursite.com/2020/10/01/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</link>
             <category>blog</category>
-            <category>java</category>
             <category>学习</category>
+            <category>java</category>
             <pubDate>Thu, 01 Oct 2020 13:45:43 +0800</pubDate>
             <description><![CDATA[ &lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; java基本概念 &lt;/font&gt;&lt;/center&gt;
 
@@ -1301,8 +1388,8 @@ BFS，广度优先搜索，也称深度优先搜索，即搜索每次可达的�
             <title>暴力枚举</title>
             <link>http://yoursite.com/2020/09/01/%E6%9A%B4%E5%8A%9B%E6%9E%9A%E4%B8%BE/</link>
             <category>blog</category>
-            <category>算法</category>
             <category>学习</category>
+            <category>算法</category>
             <pubDate>Tue, 01 Sep 2020 18:45:43 +0800</pubDate>
             <description><![CDATA[ &lt;center&gt;&lt;font face=&#34;黑体&#34; size=7&gt; 暴力枚举学习 &lt;/font&gt;&lt;/center&gt;
 
@@ -1368,25 +1455,6 @@ BFS，广度优先搜索，也称深度优先搜索，即搜索每次可达的�
 &lt;/font&gt;
 
 &lt;br/&gt;
-
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://yoursite.com/2020/08/13/%E8%90%8C%E6%96%B0%E6%9D%A5%E4%BA%86/</guid>
-            <title>萌新报道</title>
-            <link>http://yoursite.com/2020/08/13/%E8%90%8C%E6%96%B0%E6%9D%A5%E4%BA%86/</link>
-            <category>blog</category>
-            <category>心路历程</category>
-            <category>ONE</category>
-            <pubDate>Thu, 13 Aug 2020 10:45:43 +0800</pubDate>
-            <description><![CDATA[ &lt;center&gt;&lt;font face=&#34;黑体&#34; size=20&gt; 萌新来报道力 &lt;/font&gt;&lt;/center&gt;
-
-&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
-
-&lt;p&gt;&amp;emsp;&lt;font size=3&gt;入坑计算机领域已经一年有余，终于创建了第一个自己的博客了。在这个博客中，我将分享自己学习的心路历程，知识经验等等，不断总结，不断进步。登高山务攻绝顶，赏大雪莫畏严寒！！！&lt;/font&gt;&lt;/p&gt;
-&lt;br/&gt;
-
-&lt;div align=center&gt;&lt;img src=&#34;https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2062307482,1942308797&amp;fm=26&amp;gp=0.jpg&#34; width=600&gt;&lt;/div&gt;
 
  ]]></description>
         </item>
