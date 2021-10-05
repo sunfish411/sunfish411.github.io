@@ -5,13 +5,13 @@
     <link href="http://yoursite.com" />
     <updated>2020-12-10T05:45:43.000Z</updated>
     <category term="blog" />
+    <category term="心路历程" />
     <category term="学习" />
     <category term="java" />
-    <category term="心路历程" />
+    <category term="YD" />
     <category term="算法" />
     <category term="机器学习" />
     <category term="ONE" />
-    <category term="YD" />
     <entry>
         <id>http://yoursite.com/2020/12/10/%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98/</id>
         <title>网络编程</title>
