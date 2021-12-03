@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://yoursite.com</id>
+    <id>https://sunyuzero.top</id>
     <title>Sunyuzero-Blog • Posts by &#34;yd&#34; category</title>
-    <link href="http://yoursite.com" />
+    <link href="https://sunyuzero.top" />
     <updated>2021-05-14T16:00:00.000Z</updated>
     <category term="blog" />
     <category term="心路历程" />
@@ -14,9 +14,9 @@
     <category term="ONE" />
     <category term="生活" />
     <entry>
-        <id>http://yoursite.com/2021/05/15/YD/</id>
+        <id>https://sunyuzero.top/2021/05/15/YD/</id>
         <title>你就这样走进了我的生活</title>
-        <link rel="alternate" href="http://yoursite.com/2021/05/15/YD/"/>
+        <link rel="alternate" href="https://sunyuzero.top/2021/05/15/YD/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; 你就这样走进了我的生活 &lt;/font&gt;&lt;/center&gt;
 &lt;font face=&#34;楷体&#34; size=5&gt;下面的是独属于YcYd的故事&lt;/font&gt;
 
