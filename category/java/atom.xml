@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://sunyuzero.top</id>
+    <id>https://sunyuzero.top/child</id>
     <title>Sunyuzero-Blog • Posts by &#34;java&#34; category</title>
-    <link href="https://sunyuzero.top" />
+    <link href="https://sunyuzero.top/child" />
     <updated>2020-12-10T05:45:43.000Z</updated>
     <category term="blog" />
     <category term="心路历程" />
@@ -14,9 +14,9 @@
     <category term="ONE" />
     <category term="生活" />
     <entry>
-        <id>https://sunyuzero.top/2020/12/10/JAVA%E9%9B%86%E5%90%88/</id>
+        <id>https://sunyuzero.top/child/2020/12/10/JAVA%E9%9B%86%E5%90%88/</id>
         <title>java集合</title>
-        <link rel="alternate" href="https://sunyuzero.top/2020/12/10/JAVA%E9%9B%86%E5%90%88/"/>
+        <link rel="alternate" href="https://sunyuzero.top/child/2020/12/10/JAVA%E9%9B%86%E5%90%88/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; JAVA集合 &lt;/font&gt;&lt;/center&gt;
 
 &lt;h1 id=&#34;collection集合&#34;&gt;&lt;a href=&#34;#collection集合&#34; class=&#34;headerlink&#34; title=&#34;collection集合&#34;&gt;&lt;/a&gt;collection集合&lt;/h1&gt;&lt;p&gt;集合是存储数据的框架，只能用来存放对象元素，collection集合是最顶层的父类接口，其有2个子接口List和Set，分别代表着两类不同的集合，List接口实现的集合是有序的集合，有索引，元素可以重复；而Set接口实现的集合没有索引，并且不允许存放相同的元素，关于集合的体系结构如下图所示：&lt;/p&gt;
@@ -139,9 +139,9 @@ String s = it.next();   //s=&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/pre&gt;
         <updated>2020-12-10T05:45:43.000Z</updated>
     </entry>
     <entry>
-        <id>https://sunyuzero.top/2020/12/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</id>
+        <id>https://sunyuzero.top/child/2020/12/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</id>
         <title>java正则表达式</title>
-        <link rel="alternate" href="https://sunyuzero.top/2020/12/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+        <link rel="alternate" href="https://sunyuzero.top/child/2020/12/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; JAVA正则表达式 &lt;/font&gt;&lt;/center&gt;
 
 &lt;h1 id=&#34;正则表达式&#34;&gt;&lt;a href=&#34;#正则表达式&#34; class=&#34;headerlink&#34; title=&#34;正则表达式&#34;&gt;&lt;/a&gt;正则表达式&lt;/h1&gt;&lt;p&gt;正则表达式，用于字符串的匹配，可以控制输入和输出，实现字符串的验证，查找和替换。&lt;/p&gt;
@@ -178,9 +178,9 @@ String s = it.next();   //s=&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/pre&gt;
         <updated>2020-12-10T05:45:43.000Z</updated>
     </entry>
     <entry>
-        <id>https://sunyuzero.top/2020/12/10/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</id>
+        <id>https://sunyuzero.top/child/2020/12/10/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</id>
         <title>网络编程</title>
-        <link rel="alternate" href="https://sunyuzero.top/2020/12/10/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
+        <link rel="alternate" href="https://sunyuzero.top/child/2020/12/10/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
         <content type="html">&lt;h1 id=&#34;网络编程&#34;&gt;&lt;a href=&#34;#网络编程&#34; class=&#34;headerlink&#34; title=&#34;网络编程&#34;&gt;&lt;/a&gt;网络编程&lt;/h1&gt;&lt;p&gt;网络编程，就是在一定的协议下，实现两台计算机的通信的程序。网络传输的TCP/IP协议如下：&lt;/p&gt;
 &lt;div align=center&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/sunyuzero/cdn/java/java43.png&#34; width=600&gt;&lt;/div&gt;
 
@@ -277,9 +277,9 @@ String s = it.next();   //s=&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/pre&gt;
         <updated>2020-12-10T05:45:43.000Z</updated>
     </entry>
     <entry>
-        <id>https://sunyuzero.top/2020/12/10/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C&amp;IO%E6%B5%81/</id>
+        <id>https://sunyuzero.top/child/2020/12/10/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C&amp;IO%E6%B5%81/</id>
         <title>java上课笔记</title>
-        <link rel="alternate" href="https://sunyuzero.top/2020/12/10/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C&amp;IO%E6%B5%81/"/>
+        <link rel="alternate" href="https://sunyuzero.top/child/2020/12/10/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C&amp;IO%E6%B5%81/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; JAVA文件操作&amp;IO流 &lt;/font&gt;&lt;/center&gt;
 
 
@@ -476,9 +476,9 @@ String s = it.next();   //s=&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/pre&gt;
         <updated>2020-12-10T05:45:43.000Z</updated>
     </entry>
     <entry>
-        <id>https://sunyuzero.top/2020/12/08/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/</id>
+        <id>https://sunyuzero.top/child/2020/12/08/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/</id>
         <title>java上课笔记</title>
-        <link rel="alternate" href="https://sunyuzero.top/2020/12/08/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/"/>
+        <link rel="alternate" href="https://sunyuzero.top/child/2020/12/08/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; java课程笔记 &lt;/font&gt;&lt;/center&gt;
 
 &lt;h1 id=&#34;异常&#34;&gt;&lt;a href=&#34;#异常&#34; class=&#34;headerlink&#34; title=&#34;异常&#34;&gt;&lt;/a&gt;异常&lt;/h1&gt;&lt;p&gt;异常就是程序运行时发生的不正常情况，如打开一个不存在的文件，与错误不同（代码错误），异常一般分为两大类：&lt;/p&gt;
@@ -594,9 +594,9 @@ String s = it.next();   //s=&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/pre&gt;
         <updated>2020-12-08T05:45:43.000Z</updated>
     </entry>
     <entry>
-        <id>https://sunyuzero.top/2020/10/18/%E7%BA%BF%E7%A8%8B/</id>
+        <id>https://sunyuzero.top/child/2020/10/18/%E7%BA%BF%E7%A8%8B/</id>
         <title>java学线程</title>
-        <link rel="alternate" href="https://sunyuzero.top/2020/10/18/%E7%BA%BF%E7%A8%8B/"/>
+        <link rel="alternate" href="https://sunyuzero.top/child/2020/10/18/%E7%BA%BF%E7%A8%8B/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; java线程 &lt;/font&gt;&lt;/center&gt;
 
 &lt;h1 id=&#34;进程与线程&#34;&gt;&lt;a href=&#34;#进程与线程&#34; class=&#34;headerlink&#34; title=&#34;进程与线程&#34;&gt;&lt;/a&gt;进程与线程&lt;/h1&gt;&lt;h2 id=&#34;进程&#34;&gt;&lt;a href=&#34;#进程&#34; class=&#34;headerlink&#34; title=&#34;进程&#34;&gt;&lt;/a&gt;进程&lt;/h2&gt;&lt;ul&gt;
@@ -653,9 +653,9 @@ Synchronized能够实现同步的原因是：
         <updated>2020-10-18T05:45:43.000Z</updated>
     </entry>
     <entry>
-        <id>https://sunyuzero.top/2020/10/18/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/</id>
+        <id>https://sunyuzero.top/child/2020/10/18/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/</id>
         <title>java学习笔记（二）</title>
-        <link rel="alternate" href="https://sunyuzero.top/2020/10/18/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
+        <link rel="alternate" href="https://sunyuzero.top/child/2020/10/18/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; java学习笔记 &lt;/font&gt;&lt;/center&gt;
 
 &lt;h1 id=&#34;接口&#34;&gt;&lt;a href=&#34;#接口&#34; class=&#34;headerlink&#34; title=&#34;接口&#34;&gt;&lt;/a&gt;接口&lt;/h1&gt;&lt;h2 id=&#34;1-定义&#34;&gt;&lt;a href=&#34;#1-定义&#34; class=&#34;headerlink&#34; title=&#34;1.定义&#34;&gt;&lt;/a&gt;1.定义&lt;/h2&gt;&lt;p&gt;java单继承性原因：避免继承的多个类中有相同定义的方法名称导致二义性。&lt;br&gt;接口的存在是为了多实现，克服java单继承的缺点。而接口与类的区别如下：&lt;/p&gt;
@@ -940,9 +940,9 @@ toString方法可以将StringBuilder对象转换为String对象：
         <updated>2020-10-18T05:45:43.000Z</updated>
     </entry>
     <entry>
-        <id>https://sunyuzero.top/2020/10/01/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</id>
+        <id>https://sunyuzero.top/child/2020/10/01/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</id>
         <title>java学习笔记（一）</title>
-        <link rel="alternate" href="https://sunyuzero.top/2020/10/01/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+        <link rel="alternate" href="https://sunyuzero.top/child/2020/10/01/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; java基本概念 &lt;/font&gt;&lt;/center&gt;
 
 &lt;h1 id=&#34;JVM-JRE与JDK&#34;&gt;&lt;a href=&#34;#JVM-JRE与JDK&#34; class=&#34;headerlink&#34; title=&#34;JVM,JRE与JDK&#34;&gt;&lt;/a&gt;JVM,JRE与JDK&lt;/h1&gt;&lt;p&gt;java语言有一个非常显著的特征就是跨平台性，无论在什么操作系统上，java程序都能够运行，这就得益于java的JVM。&lt;/p&gt;
