@@ -9,20 +9,20 @@
         <lastBuildDate>Fri, 01 Oct 2021 18:45:43 +0800</lastBuildDate>
         <category>blog</category>
         <category>心路历程</category>
+        <category>YD</category>
+        <category>算法</category>
         <category>学习</category>
         <category>java</category>
-        <category>算法</category>
-        <category>YD</category>
+        <category>生活</category>
         <category>机器学习</category>
         <category>ONE</category>
-        <category>生活</category>
         <item>
             <guid isPermalink="true">https://sunyuzero.top/child/2021/10/01/LeetCode%E5%88%B7%E9%A2%98%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/</guid>
             <title>LeetCode刷题笔记</title>
             <link>https://sunyuzero.top/child/2021/10/01/LeetCode%E5%88%B7%E9%A2%98%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/</link>
             <category>blog</category>
-            <category>学习</category>
             <category>算法</category>
+            <category>学习</category>
             <pubDate>Fri, 01 Oct 2021 18:45:43 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;LeetCode刷题日记——初级算法&#34;&gt;&lt;a href=&#34;#LeetCode刷题日记——初级算法&#34; class=&#34;headerlink&#34; title=&#34;LeetCode刷题日记——初级算法&#34;&gt;&lt;/a&gt;LeetCode刷题日记——初级算法&lt;/h1&gt;&lt;h3 id=&#34;1-买卖股票的最佳时机&#34;&gt;&lt;a href=&#34;#1-买卖股票的最佳时机&#34; class=&#34;headerlink&#34; title=&#34;1.买卖股票的最佳时机&#34;&gt;&lt;/a&gt;1.买卖股票的最佳时机&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;题目大意&lt;/strong&gt;&lt;/p&gt;
@@ -1430,8 +1430,8 @@ BFS，广度优先搜索，也称深度优先搜索，即搜索每次可达的�
             <title>暴力枚举</title>
             <link>https://sunyuzero.top/child/2020/09/01/%E6%9A%B4%E5%8A%9B%E6%9E%9A%E4%B8%BE/</link>
             <category>blog</category>
-            <category>学习</category>
             <category>算法</category>
+            <category>学习</category>
             <pubDate>Tue, 01 Sep 2020 18:45:43 +0800</pubDate>
             <description><![CDATA[ &lt;center&gt;&lt;font face=&#34;黑体&#34; size=7&gt; 暴力枚举学习 &lt;/font&gt;&lt;/center&gt;
 

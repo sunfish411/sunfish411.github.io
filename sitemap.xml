@@ -221,6 +221,20 @@
   </url>
   
   <url>
+    <loc>https://sunyuzero.top/child/tags/YD/</loc>
+    <lastmod>2021-12-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sunyuzero.top/child/tags/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2021-12-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://sunyuzero.top/child/tags/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2021-12-16</lastmod>
     <changefreq>daily</changefreq>
@@ -235,14 +249,7 @@
   </url>
   
   <url>
-    <loc>https://sunyuzero.top/child/tags/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2021-12-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://sunyuzero.top/child/tags/YD/</loc>
+    <loc>https://sunyuzero.top/child/tags/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2021-12-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -262,13 +269,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://sunyuzero.top/child/tags/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2021-12-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   
   <url>
@@ -279,7 +279,7 @@
   </url>
   
   <url>
-    <loc>https://sunyuzero.top/child/categories/blog/YD/</loc>
+    <loc>https://sunyuzero.top/child/categories/blog/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2021-12-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -300,7 +300,7 @@
   </url>
   
   <url>
-    <loc>https://sunyuzero.top/child/categories/blog/%E7%AE%97%E6%B3%95/</loc>
+    <loc>https://sunyuzero.top/child/categories/blog/YD/</loc>
     <lastmod>2021-12-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
