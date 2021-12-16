@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>Sunyuzero-Blog • Posts by &#34;blog&#34; category</title>
-        <link>https://sunyuzero.top/child</link>
+        <link>sunyuzero.top</link>
         <description></description>
         <language>en| zh-CN | zh-TW</language>
         <pubDate>Fri, 01 Oct 2021 18:45:43 +0800</pubDate>
@@ -17,9 +17,9 @@
         <category>机器学习</category>
         <category>ONE</category>
         <item>
-            <guid isPermalink="true">https://sunyuzero.top/child/2021/10/01/LeetCode%E5%88%B7%E9%A2%98%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/</guid>
+            <guid isPermalink="true">sunyuzero.top/2021/10/01/LeetCode%E5%88%B7%E9%A2%98%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/</guid>
             <title>LeetCode刷题笔记</title>
-            <link>https://sunyuzero.top/child/2021/10/01/LeetCode%E5%88%B7%E9%A2%98%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/</link>
+            <link>sunyuzero.top/2021/10/01/LeetCode%E5%88%B7%E9%A2%98%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/</link>
             <category>blog</category>
             <category>算法</category>
             <category>学习</category>
@@ -107,9 +107,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://sunyuzero.top/child/2021/09/05/%E5%A5%88%E4%BD%95%E7%BC%98%E6%B5%85/</guid>
+            <guid isPermalink="true">sunyuzero.top/2021/09/05/%E5%A5%88%E4%BD%95%E7%BC%98%E6%B5%85/</guid>
             <title>奈何缘浅</title>
-            <link>https://sunyuzero.top/child/2021/09/05/%E5%A5%88%E4%BD%95%E7%BC%98%E6%B5%85/</link>
+            <link>sunyuzero.top/2021/09/05/%E5%A5%88%E4%BD%95%E7%BC%98%E6%B5%85/</link>
             <category>blog</category>
             <category>生活</category>
             <pubDate>Sun, 05 Sep 2021 18:45:43 +0800</pubDate>
@@ -119,9 +119,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://sunyuzero.top/child/2021/05/15/YD/</guid>
+            <guid isPermalink="true">sunyuzero.top/2021/05/15/YD/</guid>
             <title>你就这样走进了我的生活</title>
-            <link>https://sunyuzero.top/child/2021/05/15/YD/</link>
+            <link>sunyuzero.top/2021/05/15/YD/</link>
             <category>blog</category>
             <category>YD</category>
             <pubDate>Sat, 15 May 2021 00:00:00 +0800</pubDate>
@@ -144,9 +144,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://sunyuzero.top/child/2020/12/10/JAVA%E9%9B%86%E5%90%88/</guid>
+            <guid isPermalink="true">sunyuzero.top/2020/12/10/JAVA%E9%9B%86%E5%90%88/</guid>
             <title>java集合</title>
-            <link>https://sunyuzero.top/child/2020/12/10/JAVA%E9%9B%86%E5%90%88/</link>
+            <link>sunyuzero.top/2020/12/10/JAVA%E9%9B%86%E5%90%88/</link>
             <category>blog</category>
             <category>学习</category>
             <category>java</category>
@@ -269,9 +269,9 @@ String s = it.next();   //s=&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/pre&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://sunyuzero.top/child/2020/12/10/%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98/</guid>
+            <guid isPermalink="true">sunyuzero.top/2020/12/10/%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98/</guid>
             <title>网络编程</title>
-            <link>https://sunyuzero.top/child/2020/12/10/%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98/</link>
+            <link>sunyuzero.top/2020/12/10/%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98/</link>
             <category>blog</category>
             <category>算法</category>
             <pubDate>Thu, 10 Dec 2020 13:45:43 +0800</pubDate>
@@ -282,9 +282,9 @@ String s = it.next();   //s=&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;分析&#34;&gt;&lt;a href=&#34;#分析&#34; class=&#34;headerlink&#34; title=&#34;分析&#34;&gt;&lt;/a&gt;分析&lt;/h3&gt; ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://sunyuzero.top/child/2020/12/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+            <guid isPermalink="true">sunyuzero.top/2020/12/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
             <title>java正则表达式</title>
-            <link>https://sunyuzero.top/child/2020/12/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+            <link>sunyuzero.top/2020/12/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
             <category>blog</category>
             <category>学习</category>
             <category>java</category>
@@ -321,9 +321,9 @@ String s = it.next();   //s=&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/pre&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://sunyuzero.top/child/2020/12/10/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</guid>
+            <guid isPermalink="true">sunyuzero.top/2020/12/10/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</guid>
             <title>网络编程</title>
-            <link>https://sunyuzero.top/child/2020/12/10/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</link>
+            <link>sunyuzero.top/2020/12/10/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</link>
             <category>blog</category>
             <category>学习</category>
             <category>java</category>
@@ -420,9 +420,9 @@ String s = it.next();   //s=&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/pre&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://sunyuzero.top/child/2020/12/10/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C&amp;IO%E6%B5%81/</guid>
+            <guid isPermalink="true">sunyuzero.top/2020/12/10/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C&amp;IO%E6%B5%81/</guid>
             <title>java上课笔记</title>
-            <link>https://sunyuzero.top/child/2020/12/10/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C&amp;IO%E6%B5%81/</link>
+            <link>sunyuzero.top/2020/12/10/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C&amp;IO%E6%B5%81/</link>
             <category>blog</category>
             <category>学习</category>
             <category>java</category>
@@ -619,9 +619,9 @@ String s = it.next();   //s=&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;package&lt;/span&gt; IOlearining;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; java.io.File;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; java.io.FileOutputStream;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; java.io.IOException;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; java.util.Properties;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; java.util.Set;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;ProportyTest&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(String[] args)&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;throws&lt;/span&gt; IOException &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        File file = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; File(&lt;span class=&#34;string&#34;&gt;&amp;quot;D:/javaTestFile/1.proporties&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//配置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        Properties pro = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; Properties();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        pro.setProperty(&lt;span class=&#34;string&#34;&gt;&amp;quot;font-size&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;15px&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        pro.setProperty(&lt;span class=&#34;string&#34;&gt;&amp;quot;font-color&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;black&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(pro.getProperty(&lt;span class=&#34;string&#34;&gt;&amp;quot;font-size&amp;quot;&lt;/span&gt;));        &lt;span class=&#34;comment&#34;&gt;//15px&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(pro.getProperty(&lt;span class=&#34;string&#34;&gt;&amp;quot;font-color&amp;quot;&lt;/span&gt;));       &lt;span class=&#34;comment&#34;&gt;//black&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        Set&amp;lt;String&amp;gt; setPro = pro.stringPropertyNames();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(String key : setPro)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            System.out.println(key + &lt;span class=&#34;string&#34;&gt;&amp;quot; : &amp;quot;&lt;/span&gt; + pro.getProperty(key));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;comment&#34;&gt;//依次输出：font-color : black      font-size : 15px&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//将配置存储到文件中&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        pro.store(&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; FileOutputStream(file),&lt;span class=&#34;string&#34;&gt;&amp;quot;文件注释&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        pro.clear();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://sunyuzero.top/child/2020/12/08/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/</guid>
+            <guid isPermalink="true">sunyuzero.top/2020/12/08/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/</guid>
             <title>java上课笔记</title>
-            <link>https://sunyuzero.top/child/2020/12/08/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/</link>
+            <link>sunyuzero.top/2020/12/08/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/</link>
             <category>blog</category>
             <category>学习</category>
             <category>java</category>
@@ -737,9 +737,9 @@ String s = it.next();   //s=&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;h1 id=&#34;IO流&#34;&gt;&lt;a href=&#34;#IO流&#34; class=&#34;headerlink&#34; title=&#34;IO流&#34;&gt;&lt;/a&gt;IO流&lt;/h1&gt; ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://sunyuzero.top/child/2020/10/18/%E7%BA%BF%E7%A8%8B/</guid>
+            <guid isPermalink="true">sunyuzero.top/2020/10/18/%E7%BA%BF%E7%A8%8B/</guid>
             <title>java学线程</title>
-            <link>https://sunyuzero.top/child/2020/10/18/%E7%BA%BF%E7%A8%8B/</link>
+            <link>sunyuzero.top/2020/10/18/%E7%BA%BF%E7%A8%8B/</link>
             <category>blog</category>
             <category>学习</category>
             <category>java</category>
@@ -796,9 +796,9 @@ Synchronized能够实现同步的原因是：
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://sunyuzero.top/child/2020/10/18/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/</guid>
+            <guid isPermalink="true">sunyuzero.top/2020/10/18/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/</guid>
             <title>java学习笔记（二）</title>
-            <link>https://sunyuzero.top/child/2020/10/18/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/</link>
+            <link>sunyuzero.top/2020/10/18/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/</link>
             <category>blog</category>
             <category>学习</category>
             <category>java</category>
@@ -1083,9 +1083,9 @@ toString方法可以将StringBuilder对象转换为String对象：
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://sunyuzero.top/child/2020/10/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(%E4%BA%8C)/</guid>
+            <guid isPermalink="true">sunyuzero.top/2020/10/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(%E4%BA%8C)/</guid>
             <title>机器学习(二)</title>
-            <link>https://sunyuzero.top/child/2020/10/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(%E4%BA%8C)/</link>
+            <link>sunyuzero.top/2020/10/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(%E4%BA%8C)/</link>
             <category>blog</category>
             <category>机器学习</category>
             <pubDate>Mon, 12 Oct 2020 20:45:43 +0800</pubDate>
@@ -1118,9 +1118,9 @@ toString方法可以将StringBuilder对象转换为String对象：
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://sunyuzero.top/child/2020/10/05/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(%E4%B8%80)/</guid>
+            <guid isPermalink="true">sunyuzero.top/2020/10/05/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(%E4%B8%80)/</guid>
             <title>机器学习(一)</title>
-            <link>https://sunyuzero.top/child/2020/10/05/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(%E4%B8%80)/</link>
+            <link>sunyuzero.top/2020/10/05/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(%E4%B8%80)/</link>
             <category>blog</category>
             <category>机器学习</category>
             <pubDate>Mon, 05 Oct 2020 20:45:43 +0800</pubDate>
@@ -1155,9 +1155,9 @@ X_test（数据集）如下，占20%：
 &lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sc_X = StandardScaler()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;X_train = sc_X.fit_transform(X_train)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;X_test = sc_X.transform(X_test)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://sunyuzero.top/child/2020/10/01/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</guid>
+            <guid isPermalink="true">sunyuzero.top/2020/10/01/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</guid>
             <title>java学习笔记（一）</title>
-            <link>https://sunyuzero.top/child/2020/10/01/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</link>
+            <link>sunyuzero.top/2020/10/01/java%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</link>
             <category>blog</category>
             <category>学习</category>
             <category>java</category>
@@ -1295,9 +1295,9 @@ X_test（数据集）如下，占20%：
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://sunyuzero.top/child/2020/09/23/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/</guid>
+            <guid isPermalink="true">sunyuzero.top/2020/09/23/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/</guid>
             <title>算法学习</title>
-            <link>https://sunyuzero.top/child/2020/09/23/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/</link>
+            <link>sunyuzero.top/2020/09/23/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/</link>
             <category>blog</category>
             <category>算法</category>
             <pubDate>Wed, 23 Sep 2020 13:45:43 +0800</pubDate>
@@ -1331,9 +1331,9 @@ X_test（数据集）如下，占20%：
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://sunyuzero.top/child/2020/09/19/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</guid>
+            <guid isPermalink="true">sunyuzero.top/2020/09/19/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</guid>
             <title>BFS学习</title>
-            <link>https://sunyuzero.top/child/2020/09/19/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</link>
+            <link>sunyuzero.top/2020/09/19/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</link>
             <category>blog</category>
             <category>算法</category>
             <pubDate>Sat, 19 Sep 2020 13:45:43 +0800</pubDate>
@@ -1347,9 +1347,9 @@ BFS，广度优先搜索，也称深度优先搜索，即搜索每次可达的�
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://sunyuzero.top/child/2020/09/16/csp%E5%88%9D%E4%BD%93%E9%AA%8C/</guid>
+            <guid isPermalink="true">sunyuzero.top/2020/09/16/csp%E5%88%9D%E4%BD%93%E9%AA%8C/</guid>
             <title>csp初体验</title>
-            <link>https://sunyuzero.top/child/2020/09/16/csp%E5%88%9D%E4%BD%93%E9%AA%8C/</link>
+            <link>sunyuzero.top/2020/09/16/csp%E5%88%9D%E4%BD%93%E9%AA%8C/</link>
             <category>blog</category>
             <category>算法</category>
             <pubDate>Wed, 16 Sep 2020 13:45:43 +0800</pubDate>
@@ -1365,9 +1365,9 @@ BFS，广度优先搜索，也称深度优先搜索，即搜索每次可达的�
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://sunyuzero.top/child/2020/09/11/%E7%BA%BF%E6%80%A7%E8%A1%A8/</guid>
+            <guid isPermalink="true">sunyuzero.top/2020/09/11/%E7%BA%BF%E6%80%A7%E8%A1%A8/</guid>
             <title>线性表</title>
-            <link>https://sunyuzero.top/child/2020/09/11/%E7%BA%BF%E6%80%A7%E8%A1%A8/</link>
+            <link>sunyuzero.top/2020/09/11/%E7%BA%BF%E6%80%A7%E8%A1%A8/</link>
             <category>blog</category>
             <category>算法</category>
             <pubDate>Fri, 11 Sep 2020 13:45:43 +0800</pubDate>
@@ -1405,9 +1405,9 @@ BFS，广度优先搜索，也称深度优先搜索，即搜索每次可达的�
 &lt;h3 id=&#34;代码-1&#34;&gt;&lt;a href=&#34;#代码-1&#34; class=&#34;headerlink&#34; title=&#34;代码&#34;&gt;&lt;/a&gt;代码&lt;/h3&gt;&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;sortList&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(nodeList *head)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    nodeList *q,*p,*s;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    q=head-&amp;gt;next;p=head-&amp;gt;next-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    s=head;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt;(q!=&lt;span class=&#34;literal&#34;&gt;NULL&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt;(q-&amp;gt;data&amp;gt;=p-&amp;gt;data)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            p=p-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        q-&amp;gt;next=p-&amp;gt;next;p-&amp;gt;next=q;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        p=head-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        q=q-&amp;gt;next&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://sunyuzero.top/child/2020/09/03/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</guid>
+            <guid isPermalink="true">sunyuzero.top/2020/09/03/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</guid>
             <title>初探DFS</title>
-            <link>https://sunyuzero.top/child/2020/09/03/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</link>
+            <link>sunyuzero.top/2020/09/03/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</link>
             <category>blog</category>
             <category>算法</category>
             <pubDate>Thu, 03 Sep 2020 13:45:43 +0800</pubDate>
@@ -1426,9 +1426,9 @@ BFS，广度优先搜索，也称深度优先搜索，即搜索每次可达的�
 &lt;h3 id=&#34;代码-1&#34;&gt;&lt;a href=&#34;#代码-1&#34; class=&#34;headerlink&#34; title=&#34;代码&#34;&gt;&lt;/a&gt;代码&lt;/h3&gt;&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt;&lt;span class=&#34;meta-string&#34;&gt;&amp;lt;cstdio&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; startX,startY,endX,endY,min=&lt;span class=&#34;number&#34;&gt;99999&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; a[&lt;span class=&#34;number&#34;&gt;51&lt;/span&gt;][&lt;span class=&#34;number&#34;&gt;51&lt;/span&gt;]=&amp;#123;&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;&amp;#125;,book[&lt;span class=&#34;number&#34;&gt;51&lt;/span&gt;][&lt;span class=&#34;number&#34;&gt;51&lt;/span&gt;]=&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;dfs&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; x,&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; y,&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; step)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(x==endX&amp;amp;&amp;amp;y==endY)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(step&amp;lt;min) min=step;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; next[&lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;][&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;]=&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#123;&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;&amp;#125;,&amp;#123;&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;&amp;#125;,&amp;#123;&lt;span class=&#34;number&#34;&gt;-1&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;&amp;#125;,&amp;#123;&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;-1&lt;/span&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; tx,ty;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i=&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;i&amp;lt;=&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;;i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        tx=x+next[i][&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ty=y+next[i][&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(tx&amp;lt;&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;||ty&amp;lt;&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;||tx&amp;gt;n||ty&amp;gt;m)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;continue&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(a[tx][ty]==&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;&amp;amp;&amp;amp;book[tx][ty]==&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            book[tx][ty]=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            dfs(tx,ty,step+&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            book[tx][ty]=&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; ;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;scanf&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;%d%d&amp;quot;&lt;/span&gt;,&amp;amp;n,&amp;amp;m);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;i&amp;lt;=n;i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; j=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;j&amp;lt;=m;j++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;built_in&#34;&gt;scanf&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;%d&amp;quot;&lt;/span&gt;,&amp;amp;a[i][j]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;scanf&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;%d%d%d%d&amp;quot;&lt;/span&gt;,&amp;amp;startX,&amp;amp;startY,&amp;amp;endX,&amp;amp;endY);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    book[startX][startY]=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    dfs(startX,startY,&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;%s%d&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;最少步数为：&amp;quot;&lt;/span&gt;,min);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://sunyuzero.top/child/2020/09/01/%E6%9A%B4%E5%8A%9B%E6%9E%9A%E4%B8%BE/</guid>
+            <guid isPermalink="true">sunyuzero.top/2020/09/01/%E6%9A%B4%E5%8A%9B%E6%9E%9A%E4%B8%BE/</guid>
             <title>暴力枚举</title>
-            <link>https://sunyuzero.top/child/2020/09/01/%E6%9A%B4%E5%8A%9B%E6%9E%9A%E4%B8%BE/</link>
+            <link>sunyuzero.top/2020/09/01/%E6%9A%B4%E5%8A%9B%E6%9E%9A%E4%B8%BE/</link>
             <category>blog</category>
             <category>算法</category>
             <category>学习</category>

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://sunyuzero.top/child</id>
+    <id>sunyuzero.top</id>
     <title>Sunyuzero-Blog • Posts by &#34;算法&#34; tag</title>
-    <link href="https://sunyuzero.top/child" />
+    <link href="sunyuzero.top" />
     <updated>2021-10-01T10:45:43.000Z</updated>
     <category term="blog" />
     <category term="心路历程" />
@@ -14,9 +14,9 @@
     <category term="机器学习" />
     <category term="ONE" />
     <entry>
-        <id>https://sunyuzero.top/child/2021/10/01/LeetCode%E5%88%B7%E9%A2%98%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/</id>
+        <id>sunyuzero.top/2021/10/01/LeetCode%E5%88%B7%E9%A2%98%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/</id>
         <title>LeetCode刷题笔记</title>
-        <link rel="alternate" href="https://sunyuzero.top/child/2021/10/01/LeetCode%E5%88%B7%E9%A2%98%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/"/>
+        <link rel="alternate" href="sunyuzero.top/2021/10/01/LeetCode%E5%88%B7%E9%A2%98%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/"/>
         <content type="html">&lt;h1 id=&#34;LeetCode刷题日记——初级算法&#34;&gt;&lt;a href=&#34;#LeetCode刷题日记——初级算法&#34; class=&#34;headerlink&#34; title=&#34;LeetCode刷题日记——初级算法&#34;&gt;&lt;/a&gt;LeetCode刷题日记——初级算法&lt;/h1&gt;&lt;h3 id=&#34;1-买卖股票的最佳时机&#34;&gt;&lt;a href=&#34;#1-买卖股票的最佳时机&#34; class=&#34;headerlink&#34; title=&#34;1.买卖股票的最佳时机&#34;&gt;&lt;/a&gt;1.买卖股票的最佳时机&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;题目大意&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -104,9 +104,9 @@
         <updated>2021-10-01T10:45:43.000Z</updated>
     </entry>
     <entry>
-        <id>https://sunyuzero.top/child/2020/12/10/%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98/</id>
+        <id>sunyuzero.top/2020/12/10/%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98/</id>
         <title>网络编程</title>
-        <link rel="alternate" href="https://sunyuzero.top/child/2020/12/10/%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98/"/>
+        <link rel="alternate" href="sunyuzero.top/2020/12/10/%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98/"/>
         <content type="html">&lt;h2 id=&#34;关于求解字符串中出现的次数最多的子序列问题&#34;&gt;&lt;a href=&#34;#关于求解字符串中出现的次数最多的子序列问题&#34; class=&#34;headerlink&#34; title=&#34;关于求解字符串中出现的次数最多的子序列问题&#34;&gt;&lt;/a&gt;关于求解字符串中出现的次数最多的子序列问题&lt;/h2&gt;&lt;p&gt;关于这类题目有一个简单求解算法，大概思路如下：&lt;/p&gt;
 &lt;p&gt;首先来看看一个题目&lt;/p&gt;
 &lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;【问题描述】&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;NOIP 复赛之前，HSD 桑进行了一项研究，发现人某条染色体上的一段 DNA 序列中连续的  个碱基组成的碱基序列与做题的 AC 率有关！于是他想研究一下这种关系。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;现在给出一段 DNA 序列，请帮他求出这段 DNA 序列中所有连续  个碱基形成的碱基序列中，出现最多的一种的出现次数。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;【输入形式】&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;两行，第一行为一段 DNA 序列，保证 DNA 序列合法，即只含有 A, G, C, T 四种碱基；&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;第二行为一个正整数 ，意义与题目描述相同。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;【输出形式】&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;一行，一个正整数，为题目描述中所求答案。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;【样例输入】&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ACTCACTC&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;【样例输出】&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;【样例说明】&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;对于这段 DNA 序列，连续的  个碱基组成的碱基序列为：ACTC, CTCA, TCAC 与 CACT。其中 ACTC 出现  次，其余均出现  次，所以出现最多的次数为 ，即为答案。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -117,9 +117,9 @@
         <updated>2020-12-10T05:45:43.000Z</updated>
     </entry>
     <entry>
-        <id>https://sunyuzero.top/child/2020/09/23/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/</id>
+        <id>sunyuzero.top/2020/09/23/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/</id>
         <title>算法学习</title>
-        <link rel="alternate" href="https://sunyuzero.top/child/2020/09/23/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/"/>
+        <link rel="alternate" href="sunyuzero.top/2020/09/23/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; 算法学习 &lt;/font&gt;&lt;/center&gt;
 
 &lt;h1 id=&#34;getchar和putchar&#34;&gt;&lt;a href=&#34;#getchar和putchar&#34; class=&#34;headerlink&#34; title=&#34;getchar和putchar&#34;&gt;&lt;/a&gt;getchar和putchar&lt;/h1&gt;&lt;p&gt;getchar用于输入单个字符，putchar用于输出单个字符&lt;/p&gt;
@@ -153,9 +153,9 @@
         <updated>2020-09-23T05:45:43.000Z</updated>
     </entry>
     <entry>
-        <id>https://sunyuzero.top/child/2020/09/19/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</id>
+        <id>sunyuzero.top/2020/09/19/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</id>
         <title>BFS学习</title>
-        <link rel="alternate" href="https://sunyuzero.top/child/2020/09/19/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/"/>
+        <link rel="alternate" href="sunyuzero.top/2020/09/19/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; BFS学习 &lt;/font&gt;&lt;/center&gt;
 BFS，广度优先搜索，也称深度优先搜索，即搜索每次可达的所有点并进行标记，直到搜索范围覆盖所需要寻找的点。下面我们从迷宫搜索来看看DFS的应用。
 
@@ -169,9 +169,9 @@ BFS，广度优先搜索，也称深度优先搜索，即搜索每次可达的�
         <updated>2020-09-19T05:45:43.000Z</updated>
     </entry>
     <entry>
-        <id>https://sunyuzero.top/child/2020/09/16/csp%E5%88%9D%E4%BD%93%E9%AA%8C/</id>
+        <id>sunyuzero.top/2020/09/16/csp%E5%88%9D%E4%BD%93%E9%AA%8C/</id>
         <title>csp初体验</title>
-        <link rel="alternate" href="https://sunyuzero.top/child/2020/09/16/csp%E5%88%9D%E4%BD%93%E9%AA%8C/"/>
+        <link rel="alternate" href="sunyuzero.top/2020/09/16/csp%E5%88%9D%E4%BD%93%E9%AA%8C/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; 2020CSP第二场 &lt;/font&gt;&lt;/center&gt;
 
 &lt;p&gt;趁着学校报团免费参加了2020csp第二场，被血虐而归。前2题属于签到题，题目本身并不难，主要是要慢慢分析。由于太弱，只能带来前2题的题解。&lt;/p&gt;
@@ -187,9 +187,9 @@ BFS，广度优先搜索，也称深度优先搜索，即搜索每次可达的�
         <updated>2020-09-16T05:45:43.000Z</updated>
     </entry>
     <entry>
-        <id>https://sunyuzero.top/child/2020/09/11/%E7%BA%BF%E6%80%A7%E8%A1%A8/</id>
+        <id>sunyuzero.top/2020/09/11/%E7%BA%BF%E6%80%A7%E8%A1%A8/</id>
         <title>线性表</title>
-        <link rel="alternate" href="https://sunyuzero.top/child/2020/09/11/%E7%BA%BF%E6%80%A7%E8%A1%A8/"/>
+        <link rel="alternate" href="sunyuzero.top/2020/09/11/%E7%BA%BF%E6%80%A7%E8%A1%A8/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; 线性表学习 &lt;/font&gt;&lt;/center&gt;
 
 &lt;h1 id=&#34;顺序表&#34;&gt;&lt;a href=&#34;#顺序表&#34; class=&#34;headerlink&#34; title=&#34;顺序表&#34;&gt;&lt;/a&gt;顺序表&lt;/h1&gt;&lt;p&gt;顺序表，即线性表的顺序存储结构，采用结构体类型SqList表示为：&lt;/p&gt;
@@ -227,9 +227,9 @@ BFS，广度优先搜索，也称深度优先搜索，即搜索每次可达的�
         <updated>2020-09-11T05:45:43.000Z</updated>
     </entry>
     <entry>
-        <id>https://sunyuzero.top/child/2020/09/03/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</id>
+        <id>sunyuzero.top/2020/09/03/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</id>
         <title>初探DFS</title>
-        <link rel="alternate" href="https://sunyuzero.top/child/2020/09/03/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/"/>
+        <link rel="alternate" href="sunyuzero.top/2020/09/03/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; DFS入门 &lt;/font&gt;&lt;/center&gt;
 
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
@@ -248,9 +248,9 @@ BFS，广度优先搜索，也称深度优先搜索，即搜索每次可达的�
         <updated>2020-09-03T05:45:43.000Z</updated>
     </entry>
     <entry>
-        <id>https://sunyuzero.top/child/2020/09/01/%E6%9A%B4%E5%8A%9B%E6%9E%9A%E4%B8%BE/</id>
+        <id>sunyuzero.top/2020/09/01/%E6%9A%B4%E5%8A%9B%E6%9E%9A%E4%B8%BE/</id>
         <title>暴力枚举</title>
-        <link rel="alternate" href="https://sunyuzero.top/child/2020/09/01/%E6%9A%B4%E5%8A%9B%E6%9E%9A%E4%B8%BE/"/>
+        <link rel="alternate" href="sunyuzero.top/2020/09/01/%E6%9A%B4%E5%8A%9B%E6%9E%9A%E4%B8%BE/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=7&gt; 暴力枚举学习 &lt;/font&gt;&lt;/center&gt;
 
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
@@ -263,9 +263,9 @@ BFS，广度优先搜索，也称深度优先搜索，即搜索每次可达的�
         <updated>2020-09-01T10:45:43.000Z</updated>
     </entry>
     <entry>
-        <id>https://sunyuzero.top/child/2020/08/30/%E9%93%BE%E8%A1%A8/</id>
+        <id>sunyuzero.top/2020/08/30/%E9%93%BE%E8%A1%A8/</id>
         <title>链表</title>
-        <link rel="alternate" href="https://sunyuzero.top/child/2020/08/30/%E9%93%BE%E8%A1%A8/"/>
+        <link rel="alternate" href="sunyuzero.top/2020/08/30/%E9%93%BE%E8%A1%A8/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; 链表学习(一) &lt;/font&gt;&lt;/center&gt;
 
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
@@ -291,9 +291,9 @@ BFS，广度优先搜索，也称深度优先搜索，即搜索每次可达的�
         <updated>2020-08-30T05:45:43.000Z</updated>
     </entry>
     <entry>
-        <id>https://sunyuzero.top/child/2020/08/27/%E5%88%9D%E8%AF%86%E9%98%9F%E5%88%97%E5%92%8C%E6%A0%88/</id>
+        <id>sunyuzero.top/2020/08/27/%E5%88%9D%E8%AF%86%E9%98%9F%E5%88%97%E5%92%8C%E6%A0%88/</id>
         <title>初识队列和栈</title>
-        <link rel="alternate" href="https://sunyuzero.top/child/2020/08/27/%E5%88%9D%E8%AF%86%E9%98%9F%E5%88%97%E5%92%8C%E6%A0%88/"/>
+        <link rel="alternate" href="sunyuzero.top/2020/08/27/%E5%88%9D%E8%AF%86%E9%98%9F%E5%88%97%E5%92%8C%E6%A0%88/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=10&gt; 初识队列和栈 &lt;/font&gt;&lt;/center&gt;
 
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;

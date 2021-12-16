@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://sunyuzero.top/child</id>
+    <id>sunyuzero.top</id>
     <title>Sunyuzero-Blog • Posts by &#34;机器学习&#34; tag</title>
-    <link href="https://sunyuzero.top/child" />
+    <link href="sunyuzero.top" />
     <updated>2020-10-12T12:45:43.000Z</updated>
     <category term="blog" />
     <category term="心路历程" />
@@ -14,9 +14,9 @@
     <category term="机器学习" />
     <category term="ONE" />
     <entry>
-        <id>https://sunyuzero.top/child/2020/10/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(%E4%BA%8C)/</id>
+        <id>sunyuzero.top/2020/10/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(%E4%BA%8C)/</id>
         <title>机器学习(二)</title>
-        <link rel="alternate" href="https://sunyuzero.top/child/2020/10/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(%E4%BA%8C)/"/>
+        <link rel="alternate" href="sunyuzero.top/2020/10/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(%E4%BA%8C)/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; 简单线性回归 &lt;/font&gt;&lt;/center&gt;
 
 &lt;p&gt;线性回归是机器学习中训练数据集的重要手段，首先是简单的线性回归，用到的代码和数据集：&lt;a href=&#34;https://github.com/sunyuzero/cdn/blob/master/csv/studentscores.csv&#34;&gt;数据集&lt;/a&gt;,&lt;a href=&#34;https://github.com/sunyuzero/cdn/blob/master/csv/LR.py&#34;&gt;代码&lt;/a&gt;&lt;br&gt;数据集图示：&lt;/p&gt;
@@ -49,9 +49,9 @@
         <updated>2020-10-12T12:45:43.000Z</updated>
     </entry>
     <entry>
-        <id>https://sunyuzero.top/child/2020/10/05/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(%E4%B8%80)/</id>
+        <id>sunyuzero.top/2020/10/05/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(%E4%B8%80)/</id>
         <title>机器学习(一)</title>
-        <link rel="alternate" href="https://sunyuzero.top/child/2020/10/05/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(%E4%B8%80)/"/>
+        <link rel="alternate" href="sunyuzero.top/2020/10/05/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(%E4%B8%80)/"/>
         <content type="html">&lt;center&gt;&lt;font face=&#34;黑体&#34; size=8&gt; 数据预处理 &lt;/font&gt;&lt;/center&gt;
 
 &lt;p&gt;数据处理可谓是机器学习的重中之重，接下来我所用到的数据集和代码如下：&lt;a href=&#34;https://github.com/sunyuzero/cdn/blob/master/csv/Data.csv&#34;&gt;数据集&lt;/a&gt;,&lt;a href=&#34;https://github.com/sunyuzero/cdn/blob/master/csv/Data.py&#34;&gt;代码&lt;/a&gt;&lt;/p&gt;
