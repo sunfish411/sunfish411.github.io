@@ -9,11 +9,9 @@
         <lastBuildDate>Thu, 10 Dec 2020 13:45:43 +0800</lastBuildDate>
         <category>blog</category>
         <category>心路历程</category>
-        <category>YD</category>
         <category>算法</category>
         <category>学习</category>
         <category>java</category>
-        <category>生活</category>
         <category>机器学习</category>
         <category>ONE</category>
         <item>
@@ -43,15 +41,10 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Iterator也有泛型，但是它必须和调用它的对象的泛型一致，所以Iterator的泛型可以省略不写，但是写上的话必须和集合对象保持一致&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Iterator的常用方法 &lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Iterator的常用方法&lt;br&gt;  1.boolean hasNext();&lt;br&gt;  这个方法用于判断集合中是否还有元素，有的话就返回true，使用方法如下:&lt;/p&gt;
+&lt;p&gt;  Collection&lt;String&gt; coll = new LinkedList&amp;lt;&amp;gt;();&lt;br&gt;  coll.add(“a”);&lt;br&gt;  coll.add(“b”);&lt;br&gt;  Iterator it = coll.iterator();&lt;br&gt;  boolean b = it.hasNext();   //b=true&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;1.boolean hasNext();&lt;br&gt;这个方法用于判断集合中是否还有元素，有的话就返回true，使用方法如下:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Collection&amp;lt;String&amp;gt; coll = new LinkedList&amp;lt;&amp;gt;();
-coll.add(&amp;quot;a&amp;quot;);
-coll.add(&amp;quot;b&amp;quot;);
-Iterator it = coll.iterator();
-boolean b = it.hasNext();   //b=true&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;2.E next();&lt;br&gt;这个方法用于取出集合的第一个元素，使用方法如下：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Collection&amp;lt;String&amp;gt; coll = new LinkedList&amp;lt;&amp;gt;();
 coll.add(&amp;quot;a&amp;quot;);
@@ -850,10 +843,10 @@ class C implements interfaceA   //多个类实现同一个接口&lt;/code&gt;&lt
 &lt;li&gt;null是不能调用方法的，所以使用null.equals(obj)方法将会出现空指针异常，所以我们对字符串使用equals方法时，最好使用第二种形式，防止字符串为空调用方法而抛出空指针异常&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;Date类&#34;&gt;&lt;a href=&#34;#Date类&#34; class=&#34;headerlink&#34; title=&#34;Date类&#34;&gt;&lt;/a&gt;Date类&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;Date类位于java.util.Date包下，是与时间相关的一个工具类，Date的构造方法的常见重载形式有2种：&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Date类位于java.util.Date包下，是与时间相关的一个工具类，Date的构造方法的常见重载形式有2种：&lt;br&gt;  1.无参数的构造方法&lt;br&gt;  无参数的Date构造方法将会获取当前的系统时间&lt;/p&gt;
+&lt;p&gt;  Date date = new Date();   //获取系统的当前时间&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;1.无参数的构造方法&lt;br&gt;无参数的Date构造方法将会获取当前的系统时间&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Date date = new Date();   //获取系统的当前时间&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;2.有参数的构造方法&lt;br&gt;有参数的Data构造方法中，其参数应为long类型的数，代表毫秒值，获取从初始时间后的多少毫秒之后的时间&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Date date = new Date(long num);   //获取从1970年1月1日0分0秒之后的num毫秒的时间&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
