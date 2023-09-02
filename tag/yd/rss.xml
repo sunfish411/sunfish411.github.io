@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>Sunyuzero-Blog • Posts by &#34;yd&#34; tag</title>
+        <title>Sunfish-Blog • Posts by &#34;yd&#34; tag</title>
         <link>sunyuzero.top</link>
         <description></description>
         <language>en| zh-CN | zh-TW</language>
         <pubDate>Sat, 15 May 2021 00:00:00 +0800</pubDate>
         <lastBuildDate>Sat, 15 May 2021 00:00:00 +0800</lastBuildDate>
         <category>blog</category>
-        <category>学习</category>
-        <category>算法</category>
-        <category>java</category>
         <category>YD</category>
         <category>生活</category>
-        <category>机器学习</category>
         <category>心路历程</category>
+        <category>学习</category>
+        <category>java</category>
+        <category>算法</category>
+        <category>机器学习</category>
         <category>ONE</category>
         <item>
             <guid isPermalink="true">sunyuzero.top/2021/05/15/YD/</guid>
